@@ -180,6 +180,19 @@ export const FOODS: Food[] = [
     "source": "Snack size (140 g) confirmed on FatSecret AU / Fitia AU but the energy value was not returned. Scaled from the regular-size figure by weight."
   },
   {
+    "id": "deluxe-mcchicken",
+    "name": "Deluxe McChicken",
+    "category": "fastfood",
+    "servingLabel": "1 burger",
+    "kj": 2135,
+    "confidence": "low",
+    "brand": "McDonald's",
+    "protein": 20,
+    "carbs": 44,
+    "fat": 28,
+    "source": "Aggregator panel, 510 cal; macros reconcile. Official AU panel not reachable."
+  },
+  {
     "id": "mcdonalds-fries-large",
     "name": "Fries, large",
     "category": "fastfood",
@@ -204,6 +217,19 @@ export const FOODS: Food[] = [
     "carbs": 38.5,
     "fat": 14.6,
     "source": "CalorieKing AU via search: 296 cal = ~1238 kJ. Macros from republished AU panel."
+  },
+  {
+    "id": "fries-small",
+    "name": "Fries, small",
+    "category": "fastfood",
+    "servingLabel": "1 small serve",
+    "kj": 860,
+    "confidence": "medium",
+    "brand": "McDonald's",
+    "protein": 3.5,
+    "carbs": 27,
+    "fat": 10.2,
+    "source": "CalorieKing AU 206 cal; consistent by weight with the medium and large serves"
   },
   {
     "id": "grilld-garden-salad-side",
@@ -815,6 +841,16 @@ export const FOODS: Food[] = [
     "brand": "McDonald's",
     "servingGrams": 450,
     "source": "Scaled from the standard AU Coke Zero panel (~1.7 kJ/100 ml). Negligible."
+  },
+  {
+    "id": "coke-zero-small",
+    "name": "Coke Zero, small",
+    "category": "drink",
+    "servingLabel": "1 small cup (350 ml)",
+    "kj": 5,
+    "confidence": "high",
+    "brand": "McDonald's",
+    "source": "Sugar-free — negligible either way"
   },
   {
     "id": "flat-white-regular-full-cream-milk",

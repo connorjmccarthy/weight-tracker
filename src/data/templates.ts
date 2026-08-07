@@ -47,8 +47,10 @@ export const DEFAULT_TEMPLATES: DayTemplate[] = [
     items: [
       { foodId: 'iced-long-black-no-milk-no-sugar', servings: 1, meal: 'breakfast' },
       { foodId: 'grilld-simply-grilld-traditional-bun', servings: 1, meal: 'lunch' },
-      { foodId: 'mcdonalds-big-mac', servings: 1, meal: 'dinner' },
-      { foodId: 'mcdonalds-fries-medium', servings: 1, meal: 'dinner' },
+      // The small meal, as ordered: Deluxe McChicken, small fries, small Coke Zero.
+      { foodId: 'deluxe-mcchicken', servings: 1, meal: 'dinner' },
+      { foodId: 'fries-small', servings: 1, meal: 'dinner' },
+      { foodId: 'coke-zero-small', servings: 1, meal: 'dinner' },
     ],
   },
   {
@@ -74,8 +76,8 @@ export const STARTER_FAVOURITE_IDS: Id[] = [
   'dads-dinner-your-4-000-kj-estimate',
   'grilld-simply-grilld-traditional-bun',
   'mcdonalds-bacon-egg-mcmuffin',
-  'mcdonalds-big-mac',
-  'mcdonalds-fries-medium',
+  'deluxe-mcchicken',
+  'fries-small',
   'pepsi-max-375-ml-can',
   'iced-long-black-no-milk-no-sugar',
   'beef-tartare-entree-with-toast',

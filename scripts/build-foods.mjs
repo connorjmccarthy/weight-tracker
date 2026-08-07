@@ -290,6 +290,45 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Deluxe McChicken',
+    brand: "McDonald's",
+    category: 'fastfood',
+    servingLabel: '1 burger',
+    kj: 2135,
+    protein: 20,
+    carbs: 44,
+    fat: 28,
+    // Macros reconcile to 2,124 kJ, which is why this figure is here rather than the
+    // 2,520 kJ that searches also return — that belongs to the Crispy Chicken Deluxe, a
+    // different burger. The official AU panel was unreachable, so treat this as close but
+    // unconfirmed and correct it from the MyMacca's app when convenient.
+    source: 'Aggregator panel, 510 cal; macros reconcile. Official AU panel not reachable.',
+    confidence: 'low',
+  },
+  {
+    name: 'Fries, small',
+    brand: "McDonald's",
+    category: 'fastfood',
+    servingLabel: '1 small serve',
+    kj: 860,
+    protein: 3.5,
+    carbs: 27,
+    fat: 10.2,
+    // Cross-checks by weight against the medium and large rows already here: medium is
+    // 1,240 kJ for ~110 g, i.e. ~11.3 kJ/g, and a small is ~77 g.
+    source: 'CalorieKing AU 206 cal; consistent by weight with the medium and large serves',
+    confidence: 'medium',
+  },
+  {
+    name: 'Coke Zero, small',
+    brand: "McDonald's",
+    category: 'drink',
+    servingLabel: '1 small cup (350 ml)',
+    kj: 5,
+    source: 'Sugar-free — negligible either way',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
