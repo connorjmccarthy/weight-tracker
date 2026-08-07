@@ -20,11 +20,8 @@ export const DEFAULT_TEMPLATES: DayTemplate[] = [
     suggestOn: [1, 2, 5], // Mon, Tue, Fri
     items: [
       { foodId: 'crumpets-2-with-sugar-free-syrup', servings: 1, meal: 'breakfast' },
-      { foodId: 'boss-coffee-iced-latte-237ml-can', servings: 1, meal: 'breakfast' },
-      // No lunch was mentioned on these days, but a full day of gym and walking with
-      // nothing between breakfast and dinner is unlikely. A placeholder that's roughly
-      // right beats a gap that's definitely wrong — swap it for the real thing.
-      { foodId: 'lunch-you-forgot-to-log-rough-guess', servings: 1, meal: 'lunch' },
+      { foodId: 'boss-coffee-iced-double-espresso-237ml-can', servings: 1, meal: 'breakfast' },
+      // No lunch on these days — breakfast, then straight through to dinner.
       { foodId: 'dads-dinner-your-4-000-kj-estimate', servings: 1, meal: 'dinner' },
       { foodId: 'pepsi-max-375-ml-can', servings: 1, meal: 'snack' },
     ],
@@ -36,7 +33,7 @@ export const DEFAULT_TEMPLATES: DayTemplate[] = [
     suggestOn: [3],
     items: [
       { foodId: 'mcdonalds-bacon-egg-mcmuffin', servings: 1, meal: 'breakfast' },
-      { foodId: 'boss-coffee-iced-latte-237ml-can', servings: 1, meal: 'breakfast' },
+      { foodId: 'boss-coffee-iced-double-espresso-237ml-can', servings: 1, meal: 'breakfast' },
       { foodId: 'grilld-simply-grilld-traditional-bun', servings: 1, meal: 'lunch' },
       { foodId: 'beef-tartare-entree-with-toast', servings: 1, meal: 'dinner' },
       { foodId: 'carbonara-pasta-restaurant-portion', servings: 1, meal: 'dinner' },
@@ -60,7 +57,7 @@ export const DEFAULT_TEMPLATES: DayTemplate[] = [
     emoji: '🏠',
     suggestOn: [6, 0],
     items: [
-      { foodId: 'boss-coffee-iced-latte-237ml-can', servings: 1, meal: 'breakfast' },
+      { foodId: 'boss-coffee-iced-double-espresso-237ml-can', servings: 1, meal: 'breakfast' },
       { foodId: 'dads-dinner-your-4-000-kj-estimate', servings: 1, meal: 'dinner' },
     ],
   },
@@ -72,7 +69,7 @@ export const DEFAULT_TEMPLATES: DayTemplate[] = [
  */
 export const STARTER_FAVOURITE_IDS: Id[] = [
   'crumpets-2-with-sugar-free-syrup',
-  'boss-coffee-iced-latte-237ml-can',
+  'boss-coffee-iced-double-espresso-237ml-can',
   'boss-coffee-iced-long-black-237ml-can',
   'dads-dinner-your-4-000-kj-estimate',
   'grilld-simply-grilld-traditional-bun',

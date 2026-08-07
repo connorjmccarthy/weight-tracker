@@ -1,0 +1,59 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [claude/weight-loss-food-tracker-1c4uvm]
+  # Lets you redeploy from the Actions tab without pushing anything.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. A run already in progress finishes rather than being
+# cancelled, so the site is never left half-published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # A broken build must not reach the phone. The energy and trend maths decide what
+      # this app tells someone to eat, so a red test is a blocked deploy.
+      - run: npm test
+      - run: npm run typecheck
+
+      - uses: actions/configure-pages@v5
+        with:
+          # Turns Pages on for the repo on the first run, so there's no manual setup step.
+          enablement: true
+
+      - name: Build
+        # Pages serves this project from /weight-tracker/, not the domain root.
+        run: BASE_PATH=/weight-tracker/ npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
