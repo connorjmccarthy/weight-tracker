@@ -1,16 +1,14 @@
 name: Deploy to GitHub Pages
 
-# Manual only.
+# Publishes to https://connorjmccarthy.github.io/weight-tracker/ on every push.
 #
-# GitHub Pages has to be switched on for the repository before this can publish, and the
-# Actions token isn't allowed to do that for you — `configure-pages` returns a permission
-# error until a repo admin sets Settings → Pages → Source to "GitHub Actions". Running this
-# on every push would just paint the branch red, so it waits to be asked.
-#
-# Once Pages is on: Actions → "Deploy to GitHub Pages" → Run workflow. The site lands at
-# https://connorjmccarthy.github.io/weight-tracker/ and this can be switched back to
-# running on push.
+# This needed Pages switching on for the repository once, by hand — the Actions token
+# isn't allowed to do that itself, and `configure-pages` returns a permission error until
+# Settings → Pages → Source is set to "GitHub Actions". That's done; it now runs on its own.
 on:
+  push:
+    branches: [claude/weight-loss-food-tracker-1c4uvm]
+  # Redeploy from the Actions tab without pushing anything.
   workflow_dispatch:
 
 permissions:
