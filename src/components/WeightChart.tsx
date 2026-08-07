@@ -78,6 +78,10 @@ export function WeightChart({ weighIns, profile, days = 90, asOf = today() }: Pr
         <div className="empty__title">No weigh-ins yet</div>
         Add your first one and the trend line starts building. Aim for most mornings — the app
         smooths out the day-to-day noise for you.
+        <p style={{ marginBottom: 0 }}>
+          Know roughly what you weighed a few months ago? Back-date it using the date field. Old
+          weigh-ins draw the ground you've already covered without moving where your plan starts.
+        </p>
       </div>
     )
   }

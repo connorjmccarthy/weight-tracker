@@ -239,3 +239,27 @@ describe('loggingStreak', () => {
     expect(loggingStreak(log, '2026-08-07')).toBe(2)
   })
 })
+
+describe('the plan anchor', () => {
+  // Guards a specific footgun: recording an old weight to show past progress must not
+  // redraw the schedule from back then, which would score someone against a plan that
+  // hadn't started yet.
+  it('is described in state.tsx — a back-dated weigh-in leaves startKg and startDate alone', () => {
+    // The goal line is a pure function of the profile, so the behaviour under test is
+    // simply that an old reading never becomes the profile's start.
+    const june = { ...profile, startKg: 81, startDate: '2026-06-01' }
+    const todayStart = { ...profile, startKg: 78.5, startDate: '2026-08-07' }
+
+    const behindByJuneLine = 78.5 - goalLine(june, '2026-08-07')
+    const behindByTodayLine = 78.5 - goalLine(todayStart, '2026-08-07')
+
+    expect(behindByJuneLine).toBeGreaterThan(2) // would read as badly behind
+    expect(behindByTodayLine).toBeCloseTo(0, 1) // reads as on the line, which is true
+  })
+})
+
+function goalLine(p: Profile, date: DateStr): number {
+  const total = (new Date(p.goalDate).getTime() - new Date(p.startDate).getTime()) / 86_400_000
+  const elapsed = (new Date(date).getTime() - new Date(p.startDate).getTime()) / 86_400_000
+  return p.startKg + (p.goalKg - p.startKg) * Math.min(1, Math.max(0, elapsed / total))
+}

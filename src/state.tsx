@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import type { ReactNode } from 'react'
 import type { AppState, DateStr, DayTemplate, Food, Id, LogEntry, Meal, Profile, WeighIn } from './lib/types'
 import { load, newId, save } from './lib/storage'
-import { today } from './lib/date'
+import { daysBetween, today } from './lib/date'
 
 interface Store {
   state: AppState
@@ -131,12 +131,22 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const next: WeighIn = { date, kg, at: Date.now() }
       const others = s.weighIns.filter((w) => w.date !== date)
       const weighIns = [...others, next].sort((a, b) => a.date.localeCompare(b.date))
-      // The first ever weigh-in defines where the goal line starts from.
-      const isFirst = weighIns.length === 1
+
+      /*
+       * The first weigh-in anchors the goal line — but only if it's a current one.
+       *
+       * Back-dated history must never move the start. Someone who was 81 kg in June and
+       * is 78.5 kg now would otherwise have their schedule redrawn from June, and be told
+       * they're 3 kg behind a plan that only starts today. Old weights are there to show
+       * the progress already made, not to be scored against.
+       */
+      const daysOld = daysBetween(date, today())
+      const anchorsPlan = weighIns.length === 1 && daysOld >= 0 && daysOld <= 7
+
       return {
         ...s,
         weighIns,
-        profile: isFirst ? { ...s.profile, startKg: kg, startDate: date } : s.profile,
+        profile: anchorsPlan ? { ...s.profile, startKg: kg, startDate: date } : s.profile,
       }
     })
   }, [])
