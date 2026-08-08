@@ -329,6 +329,21 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Poachies, halloumi & ham',
+    category: 'restaurant',
+    servingLabel: '1 café plate',
+    // Your figure. My component build-up came to ~5,540 kJ (two poached eggs 630,
+    // hash browns 1,500, halloumi 1,400, ham 270, hollandaise 1,740) with a range of
+    // 4,470–7,020 — 4,500 is the bottom of that band, and you were the one looking at
+    // the plate. Macros are scaled to match and reconcile to 4,513 kJ.
+    kj: 4500,
+    protein: 45,
+    carbs: 42,
+    fat: 82,
+    source: 'Your estimate; component build-up put it at 4,500–7,000',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
