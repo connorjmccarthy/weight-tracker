@@ -329,6 +329,21 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: "Dad's cheese sauce gnocchi",
+    category: 'homecooked',
+    servingLabel: '1 plate (~320 g gnocchi + ~200 g sauce)',
+    // Built from the two halves: fresh potato gnocchi at ~615 kJ/100 g, and a household
+    // cheese sauce (butter, flour, milk, cheese) at ~755 kJ/100 g. Portion sized to match
+    // the lasagne plate, which is the only one of his father's serves actually measured.
+    // Add ~550 kJ if it comes with a bread roll like that one did.
+    kj: 3500,
+    protein: 28,
+    carbs: 111,
+    fat: 30,
+    source: 'Component build-up; portion matched to the photographed lasagne plate',
+    confidence: 'low',
+  },
+  {
     name: 'Poachies, halloumi & ham',
     category: 'restaurant',
     servingLabel: '1 café plate',

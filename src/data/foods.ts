@@ -563,6 +563,18 @@ export const FOODS: Food[] = [
     "source": "calcount AU 'Chilli con carne, homemade' 120 kcal/100 g = 502 kJ/100 g + cooked white rice 545 kJ/100 g; plate size assumed"
   },
   {
+    "id": "dads-cheese-sauce-gnocchi",
+    "name": "Dad's cheese sauce gnocchi",
+    "category": "homecooked",
+    "servingLabel": "1 plate (~320 g gnocchi + ~200 g sauce)",
+    "kj": 3500,
+    "confidence": "low",
+    "protein": 28,
+    "carbs": 111,
+    "fat": 30,
+    "source": "Component build-up; portion matched to the photographed lasagne plate"
+  },
+  {
     "id": "dads-dinner-your-4-000-kj-estimate",
     "name": "Dad's dinner",
     "category": "homecooked",
