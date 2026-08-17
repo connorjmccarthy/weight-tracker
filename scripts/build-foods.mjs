@@ -329,26 +329,32 @@ const EXTRA = [
     confidence: 'high',
   },
   {
-    name: 'KFC $10 Boxfull (no sauce)',
+    name: 'KFC $10 Boxfull',
     brand: 'KFC',
     category: 'fastfood',
-    servingLabel: '1 box, Pepsi Max, no sauce',
+    servingLabel: '1 box (743 g)',
     /*
-     * The $10 Wicked Boxfull lunch: Hot & Crispy Wrap, Wicked Boneless, nuggets, regular
-     * chips, sauce and a drink — with the sauce declined and Pepsi Max as the drink.
+     * KFC Australia's own published panel, read off the in-app product page:
+     * 3,872 kJ, 36.1 g protein, 95.7 g carbohydrate (16.7 g sugars), 43.8 g fat
+     * (4.5 g saturated), 1,506 mg sodium, 743 g average serve. The macros reconcile
+     * to 3,861 kJ, so the panel is internally consistent.
      *
-     * Component figures: chips 1,188 kJ (CalorieKing AU, 284 cal), Wicked Boneless
-     * 479 kJ/piece (FatSecret AU, 3 pc = 343 cal), nuggets ~230 kJ each, wrap ~1,500.
-     * KFC publishes per-item kilojoules but not the portions inside the box, and
-     * kfc.com.au is unreachable from here — so the piece counts are the soft part of
-     * this, not the per-item data. Range across plausible counts is 3,250-5,700.
+     * This replaces a component build-up that had it at 4,350 kJ and — far worse —
+     * 52 g of protein against an actual 36.1 g. The energy was 12% high; the protein
+     * was 44% high, which had wrongly ranked this box above both of his father's
+     * dinners on protein per kilojoule. A reminder that guessing macros from assumed
+     * piece counts is much less reliable than guessing total energy.
+     *
+     * The panel is presumably the box as sold, including its sauce tub. Ordering
+     * without sauce likely saves 400-500 kJ, so this figure errs high — the safe
+     * direction for someone in a deficit.
      */
-    kj: 4350,
-    protein: 52,
-    carbs: 99,
-    fat: 48,
-    source: 'Component build-up from CalorieKing/FatSecret AU; box portions unpublished',
-    confidence: 'low',
+    kj: 3872,
+    protein: 36.1,
+    carbs: 95.7,
+    fat: 43.8,
+    source: 'KFC Australia published nutrition panel',
+    confidence: 'high',
   },
   {
     name: "Dad's cheese sauce gnocchi",

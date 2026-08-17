@@ -242,17 +242,17 @@ export const FOODS: Food[] = [
     "source": "estimate. No Grill'd-specific salad data was retrievable; searches returned only generic and US-chain salads. LOW TRUST."
   },
   {
-    "id": "kfc-10-boxfull-no-sauce",
-    "name": "KFC $10 Boxfull (no sauce)",
+    "id": "kfc-10-boxfull",
+    "name": "KFC $10 Boxfull",
     "category": "fastfood",
-    "servingLabel": "1 box, Pepsi Max, no sauce",
-    "kj": 4350,
-    "confidence": "low",
+    "servingLabel": "1 box (743 g)",
+    "kj": 3872,
+    "confidence": "high",
     "brand": "KFC",
-    "protein": 52,
-    "carbs": 99,
-    "fat": 48,
-    "source": "Component build-up from CalorieKing/FatSecret AU; box portions unpublished"
+    "protein": 36.1,
+    "carbs": 95.7,
+    "fat": 43.8,
+    "source": "KFC Australia published nutrition panel"
   },
   {
     "id": "mcdonalds-mcchicken",
