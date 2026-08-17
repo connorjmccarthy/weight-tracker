@@ -329,6 +329,28 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'KFC $10 Boxfull (no sauce)',
+    brand: 'KFC',
+    category: 'fastfood',
+    servingLabel: '1 box, Pepsi Max, no sauce',
+    /*
+     * The $10 Wicked Boxfull lunch: Hot & Crispy Wrap, Wicked Boneless, nuggets, regular
+     * chips, sauce and a drink — with the sauce declined and Pepsi Max as the drink.
+     *
+     * Component figures: chips 1,188 kJ (CalorieKing AU, 284 cal), Wicked Boneless
+     * 479 kJ/piece (FatSecret AU, 3 pc = 343 cal), nuggets ~230 kJ each, wrap ~1,500.
+     * KFC publishes per-item kilojoules but not the portions inside the box, and
+     * kfc.com.au is unreachable from here — so the piece counts are the soft part of
+     * this, not the per-item data. Range across plausible counts is 3,250-5,700.
+     */
+    kj: 4350,
+    protein: 52,
+    carbs: 99,
+    fat: 48,
+    source: 'Component build-up from CalorieKing/FatSecret AU; box portions unpublished',
+    confidence: 'low',
+  },
+  {
     name: "Dad's cheese sauce gnocchi",
     category: 'homecooked',
     servingLabel: '1 plate (~320 g gnocchi + ~200 g sauce)',
