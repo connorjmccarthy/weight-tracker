@@ -329,6 +329,33 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Meat pizza, slice',
+    category: 'restaurant',
+    servingLabel: '1 slice (an eighth of a ~12 inch)',
+    /*
+     * Meat toppings with a barbecue drizzle on a thick hand-stretched base. Built from
+     * area: a loaded pizza carries ~1.05 g per cm² of base and runs ~1,050 kJ per 100 g,
+     * so a 12" (730 cm², ~765 g) comes to ~8,000 — trimmed to 7,000 for the whole pizza
+     * because a fair share of the photographed one's area was puffy bare crust. This row
+     * is an eighth of that.
+     *
+     * DIAMETER IS THE WHOLE BALLGAME and a photo cannot settle it: a 10" whole is
+     * ~5,600 kJ and a 14" is ~11,000. Ask the shop what size they sell to tighten it.
+     *
+     * Filed per slice rather than per pizza on purpose. A whole pizza is a shareable
+     * item, not one person's serving, and the database's implausibility check (nothing
+     * over 6,000 kJ in a single serving) exists to catch per-100g values recorded as
+     * per-serving. Weakening that guard to fit a pizza would blunt it for everything
+     * else — and slices are how people log pizza anyway. Whole pizza = 8 servings.
+     */
+    kj: 875,
+    protein: 10.6,
+    carbs: 21.9,
+    fat: 8.8,
+    source: 'Area-based build-up; diameter unconfirmed',
+    confidence: 'low',
+  },
+  {
     name: 'KFC $10 Boxfull',
     brand: 'KFC',
     category: 'fastfood',

@@ -415,6 +415,18 @@ export const FOODS: Food[] = [
     "source": "estimate. Half a roast chicken with skin is ~2200 kJ; sides add ~1100 kJ. Highly variable with skin-on vs off and whether it is served with chips."
   },
   {
+    "id": "meat-pizza-slice",
+    "name": "Meat pizza, slice",
+    "category": "restaurant",
+    "servingLabel": "1 slice (an eighth of a ~12 inch)",
+    "kj": 875,
+    "confidence": "low",
+    "protein": 10.6,
+    "carbs": 21.9,
+    "fat": 8.8,
+    "source": "Area-based build-up; diameter unconfirmed"
+  },
+  {
     "id": "poachies-halloumi-ham",
     "name": "Poachies, halloumi & ham",
     "category": "restaurant",
