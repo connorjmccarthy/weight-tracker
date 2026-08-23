@@ -29,6 +29,7 @@ export function FoodsView() {
   const [editing, setEditing] = useState<Food | null>(null)
   const [logging, setLogging] = useState<Food | null>(null)
   const [editTemplate, setEditTemplate] = useState<DayTemplate | null>(null)
+  const [logged, setLogged] = useState<string | null>(null)
 
   const results = useMemo(
     () => searchFoods(state.foods, query, { favouriteIds: state.favouriteIds, limit: 200 }),
@@ -101,8 +102,9 @@ export function FoodsView() {
       ) : (
         <section className="card">
           <p className="field__hint" style={{ marginTop: 0 }}>
-            A template is a whole day of food you log in one tap. Yours are set up from the week you described —
-            edit them as your habits change.
+            A template is a set of food you log in one tap — a typical day, or a particular night out. Tap the
+            name to edit it, or <strong>＋</strong> to log the whole thing to today. Ones tied to a weekday also
+            appear on the Today screen.
           </p>
 
           {state.templates.map((t) => (
@@ -126,6 +128,22 @@ export function FoodsView() {
                 )}{' '}
                 {unitLabel(profile.units)}
               </span>
+              <button
+                className="result__star"
+                aria-label={`Log ${t.name} to today`}
+                title="Log to today"
+                onClick={() => {
+                  const items = t.items
+                    .map((it) => ({ food: foodById(it.foodId), servings: it.servings, meal: it.meal }))
+                    .filter((it): it is { food: Food; servings: number; meal: Meal } => !!it.food)
+                  if (items.length) {
+                    store.addEntries(items, today())
+                    setLogged(t.id)
+                  }
+                }}
+              >
+                {logged === t.id ? '✓' : '＋'}
+              </button>
               <button
                 className="result__star"
                 aria-label={`Delete ${t.name}`}

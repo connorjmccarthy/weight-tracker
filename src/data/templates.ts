@@ -63,6 +63,21 @@ export const DEFAULT_TEMPLATES: DayTemplate[] = [
       { foodId: 'dads-dinner-your-4-000-kj-estimate', servings: 1, meal: 'dinner' },
     ],
   },
+  {
+    id: 'tpl_surface_hill',
+    name: 'Surface Hill',
+    emoji: '🍗',
+    // No suggestOn — this isn't a weekday habit, it's a night out. Apply it from the
+    // Foods tab whenever it happens.
+    items: [
+      { foodId: 'korean-fried-chicken-bao', servings: 3, meal: 'dinner' },
+      { foodId: 'loaded-gochujang-fries', servings: 1, meal: 'dinner' },
+      { foodId: 'palm-sugar-sriracha-beef', servings: 1, meal: 'dinner' },
+      { foodId: 'brookvale-ginger-beer-schooner', servings: 1, meal: 'dinner' },
+      { foodId: 'hard-rated-schooner', servings: 1, meal: 'dinner' },
+      { foodId: 'kfc-mousse', servings: 1, meal: 'snack' },
+    ],
+  },
 ]
 
 /**

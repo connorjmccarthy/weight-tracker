@@ -328,6 +328,84 @@ const EXTRA = [
     source: 'Sugar-free — negligible either way',
     confidence: 'high',
   },
+  /*
+   * Surface Hill — one night out, kept as six separate rows rather than a single
+   * 11,950 kJ entry. Nothing that size is one person's serving (the same reason the pizza
+   * is filed per slice), the components get reordered in different combinations, and a
+   * day template stitches them back into one tap. `brand` carries the venue so searching
+   * "surface hill" surfaces the lot.
+   */
+  {
+    name: 'Korean fried chicken bao',
+    brand: 'Surface Hill',
+    category: 'restaurant',
+    servingLabel: '1 bao',
+    // Bao bun 45 g (490) + coated fried chicken 60 g (660) + kewpie 12 g (350) + lettuce.
+    // Kewpie is the quiet one: ~2,900 kJ/100 g, so a 12 g smear costs more than the lettuce,
+    // the bun's sugar and the chicken's coating combined.
+    kj: 1500,
+    protein: 16,
+    carbs: 28,
+    fat: 20,
+    source: 'Component build-up',
+    confidence: 'low',
+  },
+  {
+    name: 'Loaded gochujang fries',
+    brand: 'Surface Hill',
+    category: 'restaurant',
+    servingLabel: '1 serve (150 g)',
+    kj: 1750,
+    protein: 6,
+    carbs: 38,
+    fat: 27,
+    source: 'Component build-up from the stated 150 g',
+    confidence: 'low',
+  },
+  {
+    name: 'Palm sugar & sriracha beef',
+    brand: 'Surface Hill',
+    category: 'restaurant',
+    servingLabel: '1 plate, with coconut salad and 50 g rice',
+    // Beef ~180 g with a sugar glaze, shaved coconut salad ~80 g, and the 50 g of rice
+    // as stated — taken as cooked weight, which is a notably small serve of rice.
+    kj: 2700,
+    protein: 48,
+    carbs: 40,
+    fat: 32,
+    source: 'Component build-up',
+    confidence: 'low',
+  },
+  {
+    name: 'Brookvale ginger beer, schooner',
+    brand: 'Brookvale Union',
+    category: 'alcohol',
+    servingLabel: '1 schooner (425 ml, 4% — 13 g alcohol)',
+    kj: 1050,
+    source: 'CalorieKing AU 196 cal/330 ml, scaled to a schooner',
+    confidence: 'medium',
+  },
+  {
+    name: 'Hard Rated, schooner',
+    brand: 'Hard Rated',
+    category: 'alcohol',
+    servingLabel: '1 schooner (425 ml, 4.5% — 15 g alcohol)',
+    kj: 650,
+    source: 'Fitia AU 121 cal/330 ml, scaled to a schooner',
+    confidence: 'medium',
+  },
+  {
+    name: 'KFC mousse',
+    brand: 'Surface Hill',
+    category: 'dessert',
+    servingLabel: '1 serve (~120 g)',
+    kj: 1300,
+    protein: 5,
+    carbs: 32,
+    fat: 18,
+    source: 'Typical restaurant mousse portion — the least verifiable row here',
+    confidence: 'low',
+  },
   {
     name: 'Meat pizza, slice',
     category: 'restaurant',

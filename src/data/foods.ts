@@ -415,6 +415,32 @@ export const FOODS: Food[] = [
     "source": "estimate. Half a roast chicken with skin is ~2200 kJ; sides add ~1100 kJ. Highly variable with skin-on vs off and whether it is served with chips."
   },
   {
+    "id": "korean-fried-chicken-bao",
+    "name": "Korean fried chicken bao",
+    "category": "restaurant",
+    "servingLabel": "1 bao",
+    "kj": 1500,
+    "confidence": "low",
+    "brand": "Surface Hill",
+    "protein": 16,
+    "carbs": 28,
+    "fat": 20,
+    "source": "Component build-up"
+  },
+  {
+    "id": "loaded-gochujang-fries",
+    "name": "Loaded gochujang fries",
+    "category": "restaurant",
+    "servingLabel": "1 serve (150 g)",
+    "kj": 1750,
+    "confidence": "low",
+    "brand": "Surface Hill",
+    "protein": 6,
+    "carbs": 38,
+    "fat": 27,
+    "source": "Component build-up from the stated 150 g"
+  },
+  {
     "id": "meat-pizza-slice",
     "name": "Meat pizza, slice",
     "category": "restaurant",
@@ -425,6 +451,19 @@ export const FOODS: Food[] = [
     "carbs": 21.9,
     "fat": 8.8,
     "source": "Area-based build-up; diameter unconfirmed"
+  },
+  {
+    "id": "palm-sugar-sriracha-beef",
+    "name": "Palm sugar & sriracha beef",
+    "category": "restaurant",
+    "servingLabel": "1 plate, with coconut salad and 50 g rice",
+    "kj": 2700,
+    "confidence": "low",
+    "brand": "Surface Hill",
+    "protein": 48,
+    "carbs": 40,
+    "fat": 32,
+    "source": "Component build-up"
   },
   {
     "id": "poachies-halloumi-ham",
@@ -1610,6 +1649,19 @@ export const FOODS: Food[] = [
     "source": "AUSNUT-typical regular vanilla ice cream ~880 kJ/100 g. Premium/double-cream brands run 1200–1600 kJ per 100 g"
   },
   {
+    "id": "kfc-mousse",
+    "name": "KFC mousse",
+    "category": "dessert",
+    "servingLabel": "1 serve (~120 g)",
+    "kj": 1300,
+    "confidence": "low",
+    "brand": "Surface Hill",
+    "protein": 5,
+    "carbs": 32,
+    "fat": 18,
+    "source": "Typical restaurant mousse portion — the least verifiable row here"
+  },
+  {
     "id": "massimos-gelato-1-scoop-in-a-cup",
     "name": "Massimo's, 1 scoop",
     "category": "dessert",
@@ -1715,6 +1767,26 @@ export const FOODS: Food[] = [
     "protein": 1,
     "carbs": 8,
     "source": "Derived — mid-strength runs ~30% below full strength per AU sources"
+  },
+  {
+    "id": "brookvale-ginger-beer-schooner",
+    "name": "Brookvale ginger beer, schooner",
+    "category": "alcohol",
+    "servingLabel": "1 schooner (425 ml, 4% — 13 g alcohol)",
+    "kj": 1050,
+    "confidence": "medium",
+    "brand": "Brookvale Union",
+    "source": "CalorieKing AU 196 cal/330 ml, scaled to a schooner"
+  },
+  {
+    "id": "hard-rated-schooner",
+    "name": "Hard Rated, schooner",
+    "category": "alcohol",
+    "servingLabel": "1 schooner (425 ml, 4.5% — 15 g alcohol)",
+    "kj": 650,
+    "confidence": "medium",
+    "brand": "Hard Rated",
+    "source": "Fitia AU 121 cal/330 ml, scaled to a schooner"
   },
   {
     "id": "red-wine-150-ml-glass",
