@@ -329,6 +329,35 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Wagyu steak & frites (250 g)',
+    category: 'restaurant',
+    servingLabel: '1 plate (250 g raw steak + frites)',
+    /*
+     * Steak 2,800 + frites ~160 g at ~1,200 kJ/100 g (1,900). Thin-cut frites carry more
+     * oil per gram than thick chips — more surface area for the same potato.
+     *
+     * TWO THINGS DRIVE THIS NUMBER, and both are easy to get wrong.
+     *
+     * 1. RAW WEIGHT. Australian menus quote steak raw; 250 g raw yields ~185 g cooked.
+     *    Treating the 250 g as cooked would overstate the steak by about a third — the
+     *    same error that had the standard steak plate at 3,800 kJ before it was corrected.
+     *
+     * 2. MARBLE SCORE, which matters more than the weight does. Across the range for the
+     *    same 185 g cooked: lean porterhouse 1,460 kJ, MS 3-4 2,310, MS 5-6 2,780,
+     *    MS 9+ 3,890. Filed at MS 5-6, typical for an Australian restaurant. Full-blood
+     *    A5 would put this plate near 5,800.
+     *
+     * Marbling is fat replacing muscle, so wagyu is both denser AND lower in protein than
+     * lean steak — the rare case where paying more gets a worse deal on both counts.
+     */
+    kj: 4700,
+    protein: 42,
+    carbs: 56,
+    fat: 81,
+    source: 'Component build-up at marble score 5-6; raw steak weight',
+    confidence: 'low',
+  },
+  {
     name: 'Brisket focaccia',
     brand: 'Marco Polo',
     category: 'restaurant',

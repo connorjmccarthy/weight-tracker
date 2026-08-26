@@ -549,6 +549,18 @@ export const FOODS: Food[] = [
     "source": "Split out of the tartare entree so either half can be logged alone"
   },
   {
+    "id": "wagyu-steak-frites-250-g",
+    "name": "Wagyu steak & frites (250 g)",
+    "category": "restaurant",
+    "servingLabel": "1 plate (250 g raw steak + frites)",
+    "kj": 4700,
+    "confidence": "low",
+    "protein": 42,
+    "carbs": 56,
+    "fat": 81,
+    "source": "Component build-up at marble score 5-6; raw steak weight"
+  },
+  {
     "id": "baked-fish-with-vegetables-home-cooked",
     "name": "Baked fish with vegetables (home-cooked)",
     "category": "homecooked",
