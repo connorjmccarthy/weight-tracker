@@ -328,6 +328,43 @@ const EXTRA = [
     source: 'Sugar-free — negligible either way',
     confidence: 'high',
   },
+  {
+    name: 'Brisket focaccia',
+    brand: 'Marco Polo',
+    category: 'restaurant',
+    servingLabel: '1 focaccia, without the chips',
+    /*
+     * Braised brisket, melted cheese, rocket and roasted capsicum on rosemary focaccia.
+     * Focaccia 140 g (1,757) + brisket 110 g (1,320) + cheese 30 g (430) + aioli 15 g
+     * (452) + leaves and capsicum (150).
+     *
+     * The bread is the biggest line and the least obvious one: focaccia runs ~1,255 kJ
+     * per 100 g because it is bread with a great deal of olive oil worked through it —
+     * roughly 40% more than the same weight of sourdough.
+     *
+     * Filed WITHOUT the chips that came alongside, which are their own row, because
+     * whether to eat them is a real decision worth seeing separately.
+     */
+    kj: 4150,
+    protein: 54,
+    carbs: 74,
+    fat: 53,
+    source: 'Component build-up',
+    confidence: 'low',
+  },
+  {
+    name: 'Kettle chips, cafe side',
+    category: 'snack',
+    servingLabel: '1 side serve (~55 g)',
+    // The pile that comes with a cafe sandwich. Kettle-style crisps are ~2,200 kJ/100 g,
+    // so this innocuous handful costs about as much as a Boss Coffee and a crumpet.
+    kj: 1200,
+    protein: 3,
+    carbs: 30,
+    fat: 17,
+    source: 'Typical cafe side portion',
+    confidence: 'low',
+  },
   /*
    * Surface Hill — one night out, kept as six separate rows rather than a single
    * 11,950 kJ entry. Nothing that size is one person's serving (the same reason the pizza

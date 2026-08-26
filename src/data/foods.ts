@@ -391,6 +391,19 @@ export const FOODS: Food[] = [
     "source": "120 g tartare (~850 kJ, FatSecret generic steak tartare) plus ~500 kJ of toast"
   },
   {
+    "id": "brisket-focaccia",
+    "name": "Brisket focaccia",
+    "category": "restaurant",
+    "servingLabel": "1 focaccia, without the chips",
+    "kj": 4150,
+    "confidence": "low",
+    "brand": "Marco Polo",
+    "protein": 54,
+    "carbs": 74,
+    "fat": 53,
+    "source": "Component build-up"
+  },
+  {
     "id": "carbonara-pasta-restaurant-portion",
     "name": "Carbonara, restaurant",
     "category": "restaurant",
@@ -1595,6 +1608,18 @@ export const FOODS: Food[] = [
     "carbs": 1.5,
     "fat": 16,
     "source": "AUSNUT-typical raw almonds ~2560 kJ/100 g"
+  },
+  {
+    "id": "kettle-chips-cafe-side",
+    "name": "Kettle chips, cafe side",
+    "category": "snack",
+    "servingLabel": "1 side serve (~55 g)",
+    "kj": 1200,
+    "confidence": "low",
+    "protein": 3,
+    "carbs": 30,
+    "fat": 17,
+    "source": "Typical cafe side portion"
   },
   {
     "id": "muesli-bar-1",
