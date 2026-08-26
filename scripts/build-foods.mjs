@@ -329,32 +329,37 @@ const EXTRA = [
     confidence: 'high',
   },
   {
-    name: 'Wagyu steak & frites (250 g)',
+    name: 'Wagyu steak & frites (MS 7-8)',
     category: 'restaurant',
     servingLabel: '1 plate (250 g raw steak + frites)',
     /*
-     * Steak 2,800 + frites ~160 g at ~1,200 kJ/100 g (1,900). Thin-cut frites carry more
+     * Steak 2,845 + frites ~160 g at ~1,200 kJ/100 g (1,900). Thin-cut frites carry more
      * oil per gram than thick chips — more surface area for the same potato.
      *
-     * TWO THINGS DRIVE THIS NUMBER, and both are easy to get wrong.
+     * The steak is modelled from COMPOSITION rather than a single kJ/100 g figure,
+     * because marble score is really a statement about intramuscular fat, and protein
+     * falls as fat displaces muscle. For 250 g raw, keeping 85% of the fat through
+     * cooking (the rest renders onto the grill) and all of the protein:
      *
-     * 1. RAW WEIGHT. Australian menus quote steak raw; 250 g raw yields ~185 g cooked.
-     *    Treating the 250 g as cooked would overstate the steak by about a third — the
-     *    same error that had the standard steak plate at 3,800 kJ before it was corrected.
+     *   grade          raw fat    eaten    protein
+     *   lean trimmed      15 g   1,407 kJ   55.0 g
+     *   MS 3-4            32 g   1,872 kJ   50.0 g
+     *   MS 5-6            48 g   2,301 kJ   47.5 g
+     *   MS 7-8            68 g   2,845 kJ   42.5 g   <- this one
+     *   MS 9+ / A5        88 g   3,389 kJ   37.5 g
      *
-     * 2. MARBLE SCORE, which matters more than the weight does. Across the range for the
-     *    same 185 g cooked: lean porterhouse 1,460 kJ, MS 3-4 2,310, MS 5-6 2,780,
-     *    MS 9+ 3,890. Filed at MS 5-6, typical for an Australian restaurant. Full-blood
-     *    A5 would put this plate near 5,800.
+     * Australian menus quote steak RAW; 250 g raw yields ~185 g cooked. Reading it as
+     * cooked would overstate the steak by about a third.
      *
-     * Marbling is fat replacing muscle, so wagyu is both denser AND lower in protein than
-     * lean steak — the rare case where paying more gets a worse deal on both counts.
+     * Marbling is fat replacing muscle, so the same plate with a lean porterhouse is
+     * 3,307 kJ carrying 61 g of protein, against 4,745 kJ carrying 48 g. The wagyu costs
+     * ~1,440 kJ more and returns ~12 g less protein.
      */
-    kj: 4700,
-    protein: 42,
+    kj: 4750,
+    protein: 48,
     carbs: 56,
-    fat: 81,
-    source: 'Component build-up at marble score 5-6; raw steak weight',
+    fat: 80,
+    source: 'Composition model at marble score 7-8; raw steak weight',
     confidence: 'low',
   },
   {
