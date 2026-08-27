@@ -419,14 +419,14 @@ export const FOODS: Food[] = [
     "id": "chicken-caesar-burrito",
     "name": "Chicken caesar burrito",
     "category": "restaurant",
-    "servingLabel": "1 burrito",
-    "kj": 3490,
-    "confidence": "medium",
+    "servingLabel": "1 burrito, standard dressing",
+    "kj": 3141,
+    "confidence": "high",
     "brand": "Greenstreat",
-    "protein": 53,
-    "carbs": 78,
-    "fat": 34,
-    "source": "Fitia AU brand listing (834 cal); macros reconstructed to fit"
+    "protein": 66,
+    "carbs": 48,
+    "fat": 31,
+    "source": "Greenstreat published nutrition panel"
   },
   {
     "id": "half-roast-chicken-with-sides-restaurant",

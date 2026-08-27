@@ -332,26 +332,31 @@ const EXTRA = [
     name: 'Chicken caesar burrito',
     brand: 'Greenstreat',
     category: 'restaurant',
-    servingLabel: '1 burrito',
+    servingLabel: '1 burrito, standard dressing',
     /*
-     * ENERGY IS BRAND-MATCHED: Fitia AU lists the Greenstreat Chicken Caesar Burrito at
-     * 834 cal = 3,489 kJ. That is a figure for this exact menu item, not a build-up, so
-     * it is far better than the estimates around it. Greenstreat's own site publishes
-     * nutrition too but is unreachable from here — worth reading off the menu board to
-     * promote this to high confidence.
+     * Published panel: 3,141 kJ, 66 g protein, 48 g carbohydrate, 31 g fat. The macros
+     * reconcile to 3,085 kJ, within 2%, so the panel checks out against itself.
      *
-     * THE MACROS ARE MINE, not theirs, reconstructed to fit the published total:
-     * tortilla ~80 g (1,211) + grilled chicken ~120 g (760) + rice or quinoa ~100 g (564)
-     * + caesar dressing ~35 g (717) + parmesan ~15 g (270) + leaves. That build-up comes
-     * to 3,552, within 2% of the published 3,489, which is reassuring but not proof —
-     * treat the protein figure as the soft part of this row.
+     * Dressing is the variable the venue itself calls out — 750 kcal light to 830 heavy,
+     * a swing of ~335 kJ. Filed at the standard/light end; heavy dressing is ~3,470.
+     * That also reconciles the two sources rather than pitting them against each other:
+     * the 834 cal Fitia listing this replaces is simply the heavy-dressing end of the
+     * same range, not a contradiction.
+     *
+     * WHAT THE RECONSTRUCTION GOT WRONG, and why it matters for every other estimate
+     * here: it assumed rice or quinoa in the wrap, and there is none. The filling is
+     * roasted chicken, boiled egg, parmesan crisps, parmesan, cherry tomatoes, rocket
+     * and cos — a caesar salad in a tortilla. So carbs came out 62% HIGH (78 vs 48) and
+     * protein 20% LOW (53 vs 66), even though total energy was only 11% out. Guessing a
+     * total is far more forgiving than guessing its composition; one wrong assumption
+     * about a filling moves the macros while leaving the total looking plausible.
      */
-    kj: 3490,
-    protein: 53,
-    carbs: 78,
-    fat: 34,
-    source: 'Fitia AU brand listing (834 cal); macros reconstructed to fit',
-    confidence: 'medium',
+    kj: 3141,
+    protein: 66,
+    carbs: 48,
+    fat: 31,
+    source: 'Greenstreat published nutrition panel',
+    confidence: 'high',
   },
   {
     name: 'Wagyu steak & frites (MS 7-8)',
