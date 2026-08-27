@@ -329,6 +329,31 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Chicken caesar burrito',
+    brand: 'Greenstreat',
+    category: 'restaurant',
+    servingLabel: '1 burrito',
+    /*
+     * ENERGY IS BRAND-MATCHED: Fitia AU lists the Greenstreat Chicken Caesar Burrito at
+     * 834 cal = 3,489 kJ. That is a figure for this exact menu item, not a build-up, so
+     * it is far better than the estimates around it. Greenstreat's own site publishes
+     * nutrition too but is unreachable from here — worth reading off the menu board to
+     * promote this to high confidence.
+     *
+     * THE MACROS ARE MINE, not theirs, reconstructed to fit the published total:
+     * tortilla ~80 g (1,211) + grilled chicken ~120 g (760) + rice or quinoa ~100 g (564)
+     * + caesar dressing ~35 g (717) + parmesan ~15 g (270) + leaves. That build-up comes
+     * to 3,552, within 2% of the published 3,489, which is reassuring but not proof —
+     * treat the protein figure as the soft part of this row.
+     */
+    kj: 3490,
+    protein: 53,
+    carbs: 78,
+    fat: 34,
+    source: 'Fitia AU brand listing (834 cal); macros reconstructed to fit',
+    confidence: 'medium',
+  },
+  {
     name: 'Wagyu steak & frites (MS 7-8)',
     category: 'restaurant',
     servingLabel: '1 plate (250 g raw steak + frites)',

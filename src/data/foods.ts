@@ -416,6 +416,19 @@ export const FOODS: Food[] = [
     "source": "MyNetDiary 'bowl' of spaghetti carbonara via search: 743 cal = ~3110 kJ with those macros. Restaurant portions vary enormously (search showed a 500-900 cal spread, i.e. 2100-3800 kJ). Use as a midpoint, not a precise figure."
   },
   {
+    "id": "chicken-caesar-burrito",
+    "name": "Chicken caesar burrito",
+    "category": "restaurant",
+    "servingLabel": "1 burrito",
+    "kj": 3490,
+    "confidence": "medium",
+    "brand": "Greenstreat",
+    "protein": 53,
+    "carbs": 78,
+    "fat": 34,
+    "source": "Fitia AU brand listing (834 cal); macros reconstructed to fit"
+  },
+  {
     "id": "half-roast-chicken-with-sides-restaurant",
     "name": "Half roast chicken",
     "category": "restaurant",
