@@ -613,6 +613,7 @@ const EXTRA = [
      * is visible in the bowl — none of it is poured off.
      */
     kj: 3600,
+    servingGrams: 485,
     protein: 43,
     carbs: 85,
     fat: 38,
@@ -635,6 +636,7 @@ const EXTRA = [
      * rather than something that disappears into "and some garlic bread".
      */
     kj: 530,
+    servingGrams: 42,
     protein: 3.2,
     carbs: 13.9,
     fat: 6.7,
