@@ -698,6 +698,18 @@ export const FOODS: Food[] = [
     "source": "Mean of the researched home-cooked dinner plates"
   },
   {
+    "id": "dads-pappardelle-bolognese",
+    "name": "Dad's pappardelle bolognese",
+    "category": "homecooked",
+    "servingLabel": "1 bowl (~220 g cooked pasta + ~250 g ragù)",
+    "kj": 3600,
+    "confidence": "low",
+    "protein": 43,
+    "carbs": 85,
+    "fat": 38,
+    "source": "Component build-up from the photo; portion unconfirmed"
+  },
+  {
     "id": "egg-fried-rice-home-cooked",
     "name": "Egg fried rice (home-cooked)",
     "category": "homecooked",
@@ -1391,6 +1403,18 @@ export const FOODS: Food[] = [
     "carbs": 12.3,
     "fat": 8.5,
     "source": "AU full cream milk ~275 kJ/100 ml; CalorieKing AU Woolworths full cream 250 ml = 158 kcal (~660 kJ)"
+  },
+  {
+    "id": "garlic-bread-piece",
+    "name": "Garlic bread, piece",
+    "category": "staple",
+    "servingLabel": "1 piece (~42 g)",
+    "kj": 530,
+    "confidence": "low",
+    "protein": 3.2,
+    "carbs": 13.9,
+    "fat": 6.7,
+    "source": "Australian bake-at-home garlic bread panels, ~1,270 kJ/100 g"
   },
   {
     "id": "ham-and-salad-sandwich-wholemeal",

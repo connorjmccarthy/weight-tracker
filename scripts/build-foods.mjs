@@ -593,6 +593,55 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: "Dad's pappardelle bolognese",
+    category: 'homecooked',
+    servingLabel: '1 bowl (~220 g cooked pasta + ~250 g ragù)',
+    /*
+     * Built from the parts: pasta from ~100 g dry (1,485), beef mince 130 g at ~15% fat
+     * (1,157), the oil the soffritto was started in — 12 g (444), passata and paste
+     * (200), parmesan 15 g (250), and the splash of wine or milk that goes into a long
+     * ragù (100).
+     *
+     * PORTION IS THE WHOLE ESTIMATE. A photographed bowl cannot settle how much dry
+     * pasta went in, and that single number swings the row from ~2,900 to ~4,700:
+     * 180 g cooked is 1,215 kJ and 300 g cooked is 2,030. If the pasta is ever weighed
+     * dry before it goes in the pot, that one measurement tightens this more than
+     * everything else here combined.
+     *
+     * The oil is the line most people leave out and it is worth more than the cheese.
+     * A ragù that simmers for an hour is also a fatty-mince dish whether or not the fat
+     * is visible in the bowl — none of it is poured off.
+     */
+    kj: 3600,
+    protein: 43,
+    carbs: 85,
+    fat: 38,
+    source: 'Component build-up from the photo; portion unconfirmed',
+    confidence: 'low',
+  },
+  {
+    name: 'Garlic bread, piece',
+    category: 'staple',
+    servingLabel: '1 piece (~42 g)',
+    /*
+     * Filed per piece, not per loaf, because pieces are the unit anyone actually eats and
+     * because the count is the part worth seeing. Australian bake-at-home garlic bread
+     * panels cluster around 1,270 kJ per 100 g (7.5 g protein, 33 g carbohydrate, 16 g
+     * fat) — bread carrying roughly its own weight again in garlic butter through the
+     * cuts. A 220-250 g loaf gives 5-6 pieces, so a piece lands near 530.
+     *
+     * Three pieces is a bread roll and a half in energy terms; four is more than the
+     * whole of a Friday breakfast. The row exists so the count is a visible decision
+     * rather than something that disappears into "and some garlic bread".
+     */
+    kj: 530,
+    protein: 3.2,
+    carbs: 13.9,
+    fat: 6.7,
+    source: 'Australian bake-at-home garlic bread panels, ~1,270 kJ/100 g',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
