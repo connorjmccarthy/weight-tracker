@@ -644,6 +644,39 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Massaman curry with rice',
+    category: 'restaurant',
+    servingLabel: '1 takeaway serve (~480 g curry + ~300 g rice)',
+    /*
+     * Beef massaman, the default here because that is what most Australian Thai shops
+     * mean by it. Built from the parts: coconut milk 140 g (1,260), braised beef 100 g
+     * cooked (1,000), potato 110 g (390), peanuts 12 g (300), the oil the paste is
+     * fried off in (444), palm sugar 8 g (135), aromatics and stock (100) — 3,629 for
+     * the curry — plus ~300 g of cooked jasmine rice (1,650).
+     *
+     * Cross-checked by density rather than trusted outright: the curry lands at
+     * 756 kJ/100 g against a published range of 670-795 for beef massaman, and the
+     * whole container at 679 kJ/100 g. Massaman is the richest of the common Thai
+     * curries — coconut, peanuts AND potato — so the top half of that band is the
+     * right place for it.
+     *
+     * Two levers, both bigger than they look. Rice portions run 250-400 g between
+     * shops, which is 550 kJ of swing before anyone changes what they ordered; and
+     * shops that finish the sauce with coconut CREAM rather than milk add ~400 more.
+     * A shop's container is not a standard unit, so treat this as the middle of a
+     * 4,200-6,800 band rather than a figure.
+     *
+     * Chicken thigh comes out within ~100 kJ of the beef. Chicken breast saves ~300.
+     */
+    kj: 5300,
+    servingGrams: 780,
+    protein: 44,
+    carbs: 126,
+    fat: 63,
+    source: 'Component build-up, density-checked against published massaman figures',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

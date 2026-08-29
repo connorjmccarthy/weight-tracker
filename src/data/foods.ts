@@ -467,6 +467,19 @@ export const FOODS: Food[] = [
     "source": "Component build-up from the stated 150 g"
   },
   {
+    "id": "massaman-curry-with-rice",
+    "name": "Massaman curry with rice",
+    "category": "restaurant",
+    "servingLabel": "1 takeaway serve (~480 g curry + ~300 g rice)",
+    "kj": 5300,
+    "confidence": "low",
+    "servingGrams": 780,
+    "protein": 44,
+    "carbs": 126,
+    "fat": 63,
+    "source": "Component build-up, density-checked against published massaman figures"
+  },
+  {
     "id": "meat-pizza-slice",
     "name": "Meat pizza, slice",
     "category": "restaurant",
