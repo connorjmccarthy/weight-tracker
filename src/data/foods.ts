@@ -391,6 +391,18 @@ export const FOODS: Food[] = [
     "source": "120 g tartare (~850 kJ, FatSecret generic steak tartare) plus ~500 kJ of toast"
   },
   {
+    "id": "beef-tartare-no-toast",
+    "name": "Beef tartare, no toast",
+    "category": "restaurant",
+    "servingLabel": "1 serve, meat only",
+    "kj": 1530,
+    "confidence": "medium",
+    "protein": 38.5,
+    "carbs": 9.5,
+    "fat": 19,
+    "source": "Your figures"
+  },
+  {
     "id": "brisket-focaccia",
     "name": "Brisket focaccia",
     "category": "restaurant",
@@ -1723,6 +1735,20 @@ export const FOODS: Food[] = [
     "carbs": 20,
     "fat": 8,
     "source": "estimate — AU protein bars (Quest, Musashi, Aussie Bodies) cluster 800–950 kJ for 55–60 g. Check the wrapper"
+  },
+  {
+    "id": "red-rock-deli-chips-110-g",
+    "name": "Red Rock Deli chips, 110 g",
+    "category": "snack",
+    "servingLabel": "110 g, Honey Soy Chicken",
+    "kj": 2250,
+    "confidence": "medium",
+    "brand": "Red Rock Deli",
+    "servingGrams": 110,
+    "protein": 8.6,
+    "carbs": 66,
+    "fat": 26,
+    "source": "Your figures; macro split differs from typical kettle-chip panels"
   },
   {
     "id": "ice-cream-vanilla-2-scoops",

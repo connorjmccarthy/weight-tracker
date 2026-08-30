@@ -677,6 +677,60 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Red Rock Deli chips, 110 g',
+    brand: 'Red Rock Deli',
+    category: 'snack',
+    servingLabel: '110 g, Honey Soy Chicken',
+    /*
+     * Your figures, recorded as given. They reconcile: 8.6 P + 66 C + 26 F comes to
+     * 2,230 kJ against the stated 2,250, so the row is internally consistent. Sodium
+     * ~660 mg, noted here because the schema has nowhere to put it.
+     *
+     * ONE THING WORTH CHECKING ON THE BAG. Per 100 g this works out at 60 g carbohydrate
+     * and 23.6 g fat. The one verified chip panel already in this database — Smith's
+     * Crinkle Cut, 45 g pack — is 50 g carbohydrate and 32 g fat per 100 g. Red Rock
+     * Deli is kettle-cooked, which normally puts it at or above a crinkle cut for fat,
+     * not a third below it, so the split here leans the opposite way to expected.
+     *
+     * It barely moves the energy either way (a fat-heavier split of the same 110 g lands
+     * near 2,400), so this only matters if the macros are being read rather than the
+     * total. The panel on the back of the bag settles it in ten seconds.
+     */
+    kj: 2250,
+    servingGrams: 110,
+    protein: 8.6,
+    carbs: 66,
+    fat: 26,
+    source: 'Your figures; macro split differs from typical kettle-chip panels',
+    confidence: 'medium',
+  },
+  {
+    name: 'Beef tartare, no toast',
+    category: 'restaurant',
+    servingLabel: '1 serve, meat only',
+    /*
+     * Your figures. Reconciles to 1,520 kJ against the stated 1,530.
+     *
+     * Filed separately from the existing "Beef tartare + toast" row rather than
+     * replacing it, because they are genuinely different plates: that one is 1,350 kJ
+     * with 26 g protein and 22 g of carbohydrate from the toast, this one is 1,530 with
+     * 38.5 g protein and 9.5 g carbohydrate. The protein implies ~180 g of beef, so
+     * this is the larger serve with the bread taken off it.
+     *
+     * At 40 kJ per gram of protein it is the best protein-per-kilojoule dish you can
+     * order out — ahead of the Greenstreat burrito at 48 and the Grill'd Bird & Brie
+     * at 47. Only plain ingredients (chicken breast at 23, lean steak at 25) and a
+     * generic home-baked fish row beat it. Worth knowing on a day that needs protein
+     * without much energy behind it.
+     */
+    kj: 1530,
+    protein: 38.5,
+    carbs: 9.5,
+    fat: 19,
+    source: 'Your figures',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
