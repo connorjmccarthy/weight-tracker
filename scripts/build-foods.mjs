@@ -731,6 +731,34 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: 'Wonton, pan-fried',
+    category: 'homecooked',
+    servingLabel: '1 wonton (~30 g)',
+    /*
+     * Chicken and pork filling with chive, onion and ginger, pan-fried, soy and ponzu
+     * over the top. Built per piece: wrapper ~10 g (118), filling ~16 g of a pork and
+     * chicken mince mix (112), and the oil it fried in, ~2.5 g (92).
+     *
+     * The oil is a third of the row and it is the part nobody counts. A steamed wonton
+     * of the same size is ~240 kJ; frying is what makes it 330. Anyone estimating these
+     * by their filling will land a long way low.
+     *
+     * Density check: 1,100 kJ per 100 g, against 1,000-1,150 for pan-fried dumplings.
+     *
+     * Filed per piece because the count is the entire decision, and a photographed pile
+     * of dumplings is genuinely hard to count — a plate estimate would bury an error
+     * that a per-piece row makes correctable with one tap. Soy and ponzu add ~50 kJ
+     * across a whole plate and are not worth their own row.
+     */
+    kj: 330,
+    servingGrams: 30,
+    protein: 3.8,
+    carbs: 6,
+    fat: 4.6,
+    source: 'Component build-up per piece; density-checked against pan-fried dumplings',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

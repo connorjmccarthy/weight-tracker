@@ -879,6 +879,19 @@ export const FOODS: Food[] = [
     "source": "calcount AU 'Pasta with carbonara sauce' ~191 kcal/100 g = 800 kJ/100 g; plate size assumed"
   },
   {
+    "id": "wonton-pan-fried",
+    "name": "Wonton, pan-fried",
+    "category": "homecooked",
+    "servingLabel": "1 wonton (~30 g)",
+    "kj": 330,
+    "confidence": "low",
+    "servingGrams": 30,
+    "protein": 3.8,
+    "carbs": 6,
+    "fat": 4.6,
+    "source": "Component build-up per piece; density-checked against pan-fried dumplings"
+  },
+  {
     "id": "boss-coffee-iced-caramel-latte-237ml-can",
     "name": "Boss Caramel Latte, can",
     "category": "drink",
