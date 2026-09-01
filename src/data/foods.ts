@@ -580,14 +580,14 @@ export const FOODS: Food[] = [
     "id": "rsl-parmigiana-no-chips",
     "name": "RSL parmigiana (no chips)",
     "category": "restaurant",
-    "servingLabel": "1 parmy, ~360 g, chips logged separately",
-    "kj": 3500,
-    "confidence": "low",
-    "servingGrams": 360,
-    "protein": 63,
-    "carbs": 39,
-    "fat": 47,
-    "source": "Component build-up; club portion assumed"
+    "servingLabel": "1 parmy, ~285 g, chips logged separately",
+    "kj": 2800,
+    "confidence": "medium",
+    "servingGrams": 285,
+    "protein": 49,
+    "carbs": 31,
+    "fat": 38,
+    "source": "Component build-up, portion corrected against a photo of the plate"
   },
   {
     "id": "steak-with-chips-salad-restaurant-250-g-raw",

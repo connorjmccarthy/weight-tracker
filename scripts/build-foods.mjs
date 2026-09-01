@@ -761,35 +761,38 @@ const EXTRA = [
   {
     name: 'RSL parmigiana (no chips)',
     category: 'restaurant',
-    servingLabel: '1 parmy, ~360 g, chips logged separately',
+    servingLabel: '1 parmy, ~285 g, chips logged separately',
     /*
-     * Club-sized crumbed chicken parmigiana. Built from the parts: breast 180 g raw
-     * (790), crumb, flour and egg wash ~50 g (750), oil absorbed in the fryer ~25 g
-     * (925), napoli 60 g (130), ham 30 g (200), cheese 50 g (700).
+     * Built from the parts: breast 140 g raw (615), crumb, flour and egg wash ~40 g
+     * (600), oil absorbed in the fryer ~20 g (740), napoli 45 g (100), cheese 45 g
+     * (630), the crispy ham on top ~15 g (110).
      *
-     * THE OIL IS THE LARGEST SINGLE LINE AFTER THE CHEESE and it is invisible on the
+     * REVISED DOWN FROM 3,500 once the plate was photographed. The first build assumed
+     * a 360 g club monster off nothing but the word "RSL"; the actual cutlet is a
+     * normal single-serve parmy, roughly half the width of a 30 cm plate. Portion was
+     * the entire error — 180 g of raw breast became 140, and everything scaled with it.
+     *
+     * WORTH NOTING FOR THE NEXT ESTIMATE: the density check passed BOTH times. 972
+     * kJ/100 g before, 982 after. Density confirms the recipe is modelled sensibly and
+     * says nothing at all about how much of it is on the plate, so it cannot catch a
+     * portion error. Only a picture or a scale can.
+     *
+     * THE OIL IS STILL THE LARGEST LINE AFTER THE CHEESE and it is invisible on the
      * plate. A crumbed cutlet takes up 10-15% of its weight in oil going through a
-     * fryer, which is why this lands at 3,500 where the same cutlet baked rather than
-     * fried comes to about 3,000. Same chicken, same cheese, 500 kJ of difference in
-     * the cooking method alone — and a club kitchen is never baking it.
-     *
-     * Density check: 972 kJ per 100 g, consistent with a fried crumbed cutlet under
-     * melted cheese.
+     * fryer, which is the whole gap between this and the ~2,400 the same cutlet would
+     * come to baked — and a club kitchen is never baking it.
      *
      * Filed WITHOUT the chips, which are their own row, for the same reason the
-     * focaccia and the tartare were: the chips are two-fifths of the plate and whether
-     * to finish them is a real decision worth seeing on its own. It also keeps the
-     * combined plate from tripping the 6,000 kJ implausibility guard, which exists to
-     * catch per-100 g figures logged as per-serving and should not be loosened to fit
-     * a genuinely enormous meal.
+     * focaccia and the tartare were: the chips are nearly half the plate and whether
+     * to finish them is a real decision worth seeing on its own.
      */
-    kj: 3500,
-    servingGrams: 360,
-    protein: 63,
-    carbs: 39,
-    fat: 47,
-    source: 'Component build-up; club portion assumed',
-    confidence: 'low',
+    kj: 2800,
+    servingGrams: 285,
+    protein: 49,
+    carbs: 31,
+    fat: 38,
+    source: 'Component build-up, portion corrected against a photo of the plate',
+    confidence: 'medium',
   },
   {
     name: 'Chips, pub serve',
@@ -806,6 +809,11 @@ const EXTRA = [
      *
      * Portion is the uncertainty as always: clubs are not consistent, and 200 g versus
      * 320 g is 1,250 kJ of swing.
+     *
+     * Held at 250 g after seeing the plate photographed — roughly two dozen thick-cut
+     * chips, and visibly the pale even coating of a frozen coated fry rather than a
+     * hand-cut one, which is what the above-Grill'd density was modelling. This row
+     * survived the photo unchanged while the parmy beside it came down by 20%.
      */
     kj: 2600,
     servingGrams: 250,
