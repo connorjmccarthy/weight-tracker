@@ -759,6 +759,63 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'RSL parmigiana (no chips)',
+    category: 'restaurant',
+    servingLabel: '1 parmy, ~360 g, chips logged separately',
+    /*
+     * Club-sized crumbed chicken parmigiana. Built from the parts: breast 180 g raw
+     * (790), crumb, flour and egg wash ~50 g (750), oil absorbed in the fryer ~25 g
+     * (925), napoli 60 g (130), ham 30 g (200), cheese 50 g (700).
+     *
+     * THE OIL IS THE LARGEST SINGLE LINE AFTER THE CHEESE and it is invisible on the
+     * plate. A crumbed cutlet takes up 10-15% of its weight in oil going through a
+     * fryer, which is why this lands at 3,500 where the same cutlet baked rather than
+     * fried comes to about 3,000. Same chicken, same cheese, 500 kJ of difference in
+     * the cooking method alone — and a club kitchen is never baking it.
+     *
+     * Density check: 972 kJ per 100 g, consistent with a fried crumbed cutlet under
+     * melted cheese.
+     *
+     * Filed WITHOUT the chips, which are their own row, for the same reason the
+     * focaccia and the tartare were: the chips are two-fifths of the plate and whether
+     * to finish them is a real decision worth seeing on its own. It also keeps the
+     * combined plate from tripping the 6,000 kJ implausibility guard, which exists to
+     * catch per-100 g figures logged as per-serving and should not be loosened to fit
+     * a genuinely enormous meal.
+     */
+    kj: 3500,
+    servingGrams: 360,
+    protein: 63,
+    carbs: 39,
+    fat: 47,
+    source: 'Component build-up; club portion assumed',
+    confidence: 'low',
+  },
+  {
+    name: 'Chips, pub serve',
+    category: 'restaurant',
+    servingLabel: '1 pub/club side (~250 g)',
+    /*
+     * The pile that comes with a parmy or a schnitzel — thick-cut, deep-fried, usually
+     * coated. Modelled at ~1,050 kJ per 100 g.
+     *
+     * Cross-checked against the Grill'd regular serve already in this database, which
+     * is a published 2,460 kJ for 245 g. This row is a shade denser per gram because
+     * pub chips are thicker-cut and generally batter-coated, which is the right
+     * direction, and the two land within 6% of each other on the same weight.
+     *
+     * Portion is the uncertainty as always: clubs are not consistent, and 200 g versus
+     * 320 g is 1,250 kJ of swing.
+     */
+    kj: 2600,
+    servingGrams: 250,
+    protein: 8,
+    carbs: 80,
+    fat: 30,
+    source: 'Modelled at ~1,050 kJ/100 g, cross-checked against the Grill\'d panel',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

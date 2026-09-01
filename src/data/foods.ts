@@ -441,6 +441,19 @@ export const FOODS: Food[] = [
     "source": "Greenstreat published nutrition panel"
   },
   {
+    "id": "chips-pub-serve",
+    "name": "Chips, pub serve",
+    "category": "restaurant",
+    "servingLabel": "1 pub/club side (~250 g)",
+    "kj": 2600,
+    "confidence": "low",
+    "servingGrams": 250,
+    "protein": 8,
+    "carbs": 80,
+    "fat": 30,
+    "source": "Modelled at ~1,050 kJ/100 g, cross-checked against the Grill'd panel"
+  },
+  {
     "id": "half-roast-chicken-with-sides-restaurant",
     "name": "Half roast chicken",
     "category": "restaurant",
@@ -562,6 +575,19 @@ export const FOODS: Food[] = [
     "kj": 2800,
     "confidence": "low",
     "source": "estimate. Typically somewhat below carbonara (no cream/egg emulsion, less cheese) but with more meat. Band 2300-3400 kJ."
+  },
+  {
+    "id": "rsl-parmigiana-no-chips",
+    "name": "RSL parmigiana (no chips)",
+    "category": "restaurant",
+    "servingLabel": "1 parmy, ~360 g, chips logged separately",
+    "kj": 3500,
+    "confidence": "low",
+    "servingGrams": 360,
+    "protein": 63,
+    "carbs": 39,
+    "fat": 47,
+    "source": "Component build-up; club portion assumed"
   },
   {
     "id": "steak-with-chips-salad-restaurant-250-g-raw",
