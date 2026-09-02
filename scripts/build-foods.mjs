@@ -824,6 +824,41 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Brisket, potato bake & rice plate',
+    category: 'restaurant',
+    servingLabel: '1 catered plate (~485 g)',
+    /*
+     * Braised brisket in a dark glaze, Mexican-style tomato rice with corn and
+     * capsicum, and a potato bake. Built from the three parts:
+     *
+     *   brisket 160 g cooked at ~1,150 kJ/100 g   1,840
+     *   the glaze on it, ~25 g                      225
+     *   tomato rice 150 g (rice plus its oil)       960
+     *   potato bake 150 g                         1,100
+     *
+     * THE POTATO BAKE IS THE SURPRISE. Sliced potato is 320 kJ for that weight; the
+     * cream and cheese it sits in take it to 1,100. It reads as the harmless vegetable
+     * on the plate and costs more than the rice.
+     *
+     * Portion confidence is better here than for most photo estimates, and for a dull
+     * reason: catering paper plates come in standard sizes. A 23 cm plate three-quarters
+     * covered to ~1.5 cm deep is 450-500 g, which is a real measurement rather than the
+     * assumed one that put the RSL parmy 25% high. Density lands at 845 kJ/100 g,
+     * right for a meat-led plate with two starch sides.
+     *
+     * The brisket cut is the remaining soft spot: point end with its fat rendered
+     * through is ~1,300 kJ/100 g, a trimmed flat closer to 950. That is 550 kJ of
+     * swing on this plate and nothing in a photo settles it.
+     */
+    kj: 4100,
+    servingGrams: 485,
+    protein: 52,
+    carbs: 75,
+    fat: 52,
+    source: 'Component build-up; portion scaled off a standard catering plate',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

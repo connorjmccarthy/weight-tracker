@@ -416,6 +416,19 @@ export const FOODS: Food[] = [
     "source": "Component build-up"
   },
   {
+    "id": "brisket-potato-bake-rice-plate",
+    "name": "Brisket, potato bake & rice plate",
+    "category": "restaurant",
+    "servingLabel": "1 catered plate (~485 g)",
+    "kj": 4100,
+    "confidence": "low",
+    "servingGrams": 485,
+    "protein": 52,
+    "carbs": 75,
+    "fat": 52,
+    "source": "Component build-up; portion scaled off a standard catering plate"
+  },
+  {
     "id": "carbonara-pasta-restaurant-portion",
     "name": "Carbonara, restaurant",
     "category": "restaurant",
