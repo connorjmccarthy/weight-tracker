@@ -859,6 +859,38 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Chicken carbonara (home bowl)',
+    category: 'homecooked',
+    servingLabel: '1 full bowl (~450 g)',
+    /*
+     * Fusilli in a creamy carbonara with chicken and bacon through it. Built from the
+     * parts: pasta from ~127 g dry (1,885), chicken 70 g cooked (620), bacon 32 g
+     * cooked (530), cream ~35 g (455), parmesan 15 g (255), the fat it was started in
+     * (185).
+     *
+     * CROSS-CHECKED AGAINST THIS DATABASE rather than against a general range, which is
+     * the stronger test: the plain home carbonara row already here is 3,040 kJ for
+     * 380 g, or 800 kJ/100 g. This lands at 873 — 9% denser, which is what adding
+     * chicken and a visibly creamy rather than eggy sauce should do. A figure that came
+     * out BELOW the plain version would have meant an arithmetic error somewhere.
+     *
+     * Portion is the uncertainty, as it was for the parmy. A ~20 cm bowl filled to the
+     * rim with spirals is ~450 g; 350 g would make this 3,050 and 550 g would make it
+     * 4,800. The bowl, not the recipe, is what a photo struggles with.
+     *
+     * The cream, bacon and cheese together are ~1,240 kJ — nearly a third of the bowl
+     * for a small fraction of its volume. Two-thirds of a serve of this is not
+     * two-thirds of a normal pasta dish.
+     */
+    kj: 3900,
+    servingGrams: 450,
+    protein: 48,
+    carbs: 91,
+    fat: 42,
+    source: 'Component build-up, density-checked against the plain carbonara row',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

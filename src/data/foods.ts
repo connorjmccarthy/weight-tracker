@@ -703,6 +703,19 @@ export const FOODS: Food[] = [
     "source": "estimate — butter chicken assumed 780 kJ/100 g (cream/butter based, between calcount homemade curry values and AU retail butter-chicken meals) + rice at AUSNUT-typical 545 kJ/100 g"
   },
   {
+    "id": "chicken-carbonara-home-bowl",
+    "name": "Chicken carbonara (home bowl)",
+    "category": "homecooked",
+    "servingLabel": "1 full bowl (~450 g)",
+    "kj": 3900,
+    "confidence": "low",
+    "servingGrams": 450,
+    "protein": 48,
+    "carbs": 91,
+    "fat": 42,
+    "source": "Component build-up, density-checked against the plain carbonara row"
+  },
+  {
     "id": "chicken-curry-with-rice-home-cooked",
     "name": "Chicken curry with rice (home-cooked)",
     "category": "homecooked",
