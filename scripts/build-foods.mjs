@@ -891,6 +891,36 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Protein Crisp bar, Choc Peanut',
+    brand: 'Musashi',
+    category: 'snack',
+    servingLabel: '1 bar (60 g)',
+    /*
+     * Published panel, confirmed across two independent retail listings: 989 kJ
+     * (236 Cal), 20.0 g protein, 9.7 g fat (3.4 g saturated), 9.5 g carbohydrate
+     * (3.6 g sugars), 5.6 g dietary fibre, 251 mg sodium.
+     *
+     * THE MACROS DELIBERATELY DO NOT ADD UP AND THAT IS CORRECT. Protein, carbohydrate
+     * and fat at 17/17/37 come to 861 kJ against a declared 989 — 13% short. The gap is
+     * the 5.6 g of fibre plus the polyols that low-sugar bars use in place of sugar,
+     * neither of which is counted inside "carbohydrate" on an Australian panel but both
+     * of which carry energy. The reconciliation gate in this script allows 20% for
+     * exactly this reason; a bar that reconciled perfectly would be the suspicious one.
+     *
+     * Looked up rather than recalled. Branded figures are where this database has been
+     * wrong most often — three McMuffins, a Frozen Coke and a McFlurry all had to be
+     * corrected — so brand-name items get checked against a retailer panel now instead
+     * of estimated.
+     */
+    kj: 989,
+    servingGrams: 60,
+    protein: 20,
+    carbs: 9.5,
+    fat: 9.7,
+    source: 'Musashi published panel via FatSecret AU and Australian retail listings',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

@@ -1802,6 +1802,20 @@ export const FOODS: Food[] = [
     "source": "estimate — AU protein bars (Quest, Musashi, Aussie Bodies) cluster 800–950 kJ for 55–60 g. Check the wrapper"
   },
   {
+    "id": "protein-crisp-bar-choc-peanut",
+    "name": "Protein Crisp bar, Choc Peanut",
+    "category": "snack",
+    "servingLabel": "1 bar (60 g)",
+    "kj": 989,
+    "confidence": "high",
+    "brand": "Musashi",
+    "servingGrams": 60,
+    "protein": 20,
+    "carbs": 9.5,
+    "fat": 9.7,
+    "source": "Musashi published panel via FatSecret AU and Australian retail listings"
+  },
+  {
     "id": "red-rock-deli-chips-110-g",
     "name": "Red Rock Deli chips, 110 g",
     "category": "snack",
