@@ -955,6 +955,61 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Chicken schnitzel, crumbed (pan-fried)',
+    category: 'homecooked',
+    servingLabel: '1 schnitzel — 127 g raw crumbed, ~115 g cooked',
+    /*
+     * WEIGHED, NOT ESTIMATED. 254 g on the scale for two raw crumbed schnitzels, so
+     * 127 g each. This is the first row here whose portion is a measurement instead of
+     * a judgement about a photograph, and it is the reason the confidence is medium
+     * rather than low — what is still modelled is the split inside that weight and the
+     * oil, not the amount of food.
+     *
+     * From 127 g raw crumbed: ~97 g chicken breast (427) and ~30 g of flour, egg and
+     * crumb (435) at the usual 20-25% coating share. Pan-frying adds ~12.5 g of
+     * absorbed oil (462).
+     *
+     * THE OIL IS 35% OF THIS ROW. The same weighed schnitzel is 910 kJ oven-baked,
+     * 1,320 pan-fried and about 1,560 deep-fried — a 70% spread with the food held
+     * constant. That is why the baked version is its own row rather than a note: which
+     * pan it goes in is a bigger decision than anything about the schnitzel itself.
+     *
+     * Density 1,148 kJ per 100 g cooked, consistent with a fried crumbed cutlet.
+     *
+     * Two of these is 2,640 kJ — set servings to 2 for the pair that was weighed.
+     */
+    kj: 1320,
+    servingGrams: 115,
+    protein: 26,
+    carbs: 19.5,
+    fat: 16,
+    source: 'Weighed raw (254 g for two); coating share and oil uptake modelled',
+    confidence: 'medium',
+  },
+  {
+    name: 'Chicken schnitzel, crumbed (oven-baked)',
+    category: 'homecooked',
+    servingLabel: '1 schnitzel — 127 g raw crumbed, ~103 g cooked',
+    /*
+     * The same weighed 127 g schnitzel, oven-baked with a light spray instead of fried:
+     * chicken 97 g raw (427), coating 30 g (435), spray (50).
+     *
+     * 410 kJ cheaper than the pan, per piece, for identical food. Two schnitzels baked
+     * rather than fried is 820 kJ — most of a Bunnings sausage sizzle, saved by a
+     * decision that takes no willpower at all because it happens before the meal is on
+     * the plate.
+     *
+     * Density 883 kJ per 100 g cooked.
+     */
+    kj: 910,
+    servingGrams: 103,
+    protein: 26,
+    carbs: 19.5,
+    fat: 5,
+    source: 'Weighed raw (254 g for two); baked with light spray',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

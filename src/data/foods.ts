@@ -743,6 +743,32 @@ export const FOODS: Food[] = [
     "source": "calcount AU chicken curry ~122 kcal/100 g = 510 kJ/100 g + cooked white rice 545 kJ/100 g; plate size assumed"
   },
   {
+    "id": "chicken-schnitzel-crumbed-oven-baked",
+    "name": "Chicken schnitzel, crumbed (oven-baked)",
+    "category": "homecooked",
+    "servingLabel": "1 schnitzel — 127 g raw crumbed, ~103 g cooked",
+    "kj": 910,
+    "confidence": "medium",
+    "servingGrams": 103,
+    "protein": 26,
+    "carbs": 19.5,
+    "fat": 5,
+    "source": "Weighed raw (254 g for two); baked with light spray"
+  },
+  {
+    "id": "chicken-schnitzel-crumbed-pan-fried",
+    "name": "Chicken schnitzel, crumbed (pan-fried)",
+    "category": "homecooked",
+    "servingLabel": "1 schnitzel — 127 g raw crumbed, ~115 g cooked",
+    "kj": 1320,
+    "confidence": "medium",
+    "servingGrams": 115,
+    "protein": 26,
+    "carbs": 19.5,
+    "fat": 16,
+    "source": "Weighed raw (254 g for two); coating share and oil uptake modelled"
+  },
+  {
     "id": "chilli-con-carne-with-rice-home-cooked",
     "name": "Chilli con carne with rice (home-cooked)",
     "category": "homecooked",
