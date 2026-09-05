@@ -921,6 +921,37 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Bunnings sausage sizzle (hotdog)',
+    brand: 'Bunnings',
+    category: 'fastfood',
+    servingLabel: '1 snag in bread, onion and sauce (~125 g)',
+    /*
+     * Thin beef sausage 60 g cooked (720), one slice of white bread 35 g (370), onions
+     * off the hotplate 15 g (60), tomato sauce 15 g (65).
+     *
+     * NO PANEL EXISTS AND ONE NEVER WILL. Every Bunnings sizzle is run by a different
+     * community group with whatever sausages they bought that week, so unlike the
+     * Musashi bar there is nothing authoritative to look up — this has to be an
+     * estimate. Published third-party figures span 1,050-1,670 kJ with 10-15 g protein;
+     * this build-up lands at 1,215 with 14 g, mid-range on both.
+     *
+     * THE SAUSAGE IS THE WHOLE VARIANCE. A thin beef snag is ~1,200 kJ/100 g cooked;
+     * a thicker or porkier one runs 1,500 and is half again the weight, which takes the
+     * same item past 1,600. The bread, onion and sauce are near-fixed at ~495 between
+     * them. Two sizzles from two different Saturdays are not the same food.
+     *
+     * Named with "hotdog" in it deliberately: search matches on name, brand and
+     * category only, so anyone typing what they call it needs the word to be there.
+     */
+    kj: 1200,
+    servingGrams: 125,
+    protein: 14,
+    carbs: 24.5,
+    fat: 15,
+    source: 'Component build-up; mid-range against published third-party figures',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

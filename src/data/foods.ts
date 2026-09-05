@@ -132,6 +132,20 @@ export const FOODS: Food[] = [
     "source": "estimate. A 'Bird & Brie No Bun' entry exists on MyNetDiary but no numbers were returned in the snippet."
   },
   {
+    "id": "bunnings-sausage-sizzle-hotdog",
+    "name": "Bunnings sausage sizzle (hotdog)",
+    "category": "fastfood",
+    "servingLabel": "1 snag in bread, onion and sauce (~125 g)",
+    "kj": 1200,
+    "confidence": "low",
+    "brand": "Bunnings",
+    "servingGrams": 125,
+    "protein": 14,
+    "carbs": 24.5,
+    "fat": 15,
+    "source": "Component build-up; mid-range against published third-party figures"
+  },
+  {
     "id": "mcdonalds-cheeseburger",
     "name": "Cheeseburger",
     "category": "fastfood",
