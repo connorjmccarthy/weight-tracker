@@ -1012,33 +1012,32 @@ const EXTRA = [
   {
     name: 'Tzatziki, homemade',
     category: 'homecooked',
-    servingLabel: '100 g — a generous dollop',
+    servingLabel: '1 bowl (170 g) — yoghurt and cucumber only',
     /*
-     * Modelled on a standard batch: 200 g Greek yoghurt, 60 g grated cucumber, 5 g
-     * garlic, 10 g lemon juice and 5 g olive oil, making ~280 g at ~381 kJ/100 g.
+     * As actually made: ~130 g Greek yoghurt and ~40 g grated cucumber, weighed at
+     * 170 g in the bowl. Garlic, herbs and pepper are rounding error. NO OLIVE OIL and
+     * no lemon, which is what separates this from the version first modelled here —
+     * that build assumed 5 g of oil and it was 185 kJ of a 280 g batch. Taking the oil
+     * out drops the density from 381 kJ/100 g to 321.
      *
-     * BUILT ON FULL-FAT YOGHURT, which errs high — the safe direction. Made with the
-     * low-fat Greek yoghurt already in this database it drops to ~276 kJ/100 g, a
-     * quarter less. That is the single thing worth knowing about this row, and which
-     * tub was used is the only question it turns on.
+     * SWITCHING TUBS MATTERS MORE THAN ANY OTHER DECISION LEFT IN THIS ROW. Built on
+     * full-fat Greek yoghurt, which errs high in the absence of a stated tub. On the
+     * low-fat Greek yoghurt already in this database the same bowl is ~355 kJ with
+     * ~13.3 g protein — 27 kJ per gram of protein, which is whey-shake territory and
+     * better than every composed meal here.
      *
-     * WHAT IT IS AND ISN'T. At 59 kJ per gram of protein it is not a protein source —
-     * plain Greek yoghurt is 25, and cucumber, oil and lemon dilute it to less than
-     * half as good. The win is not against yoghurt, it is against the sauce it
-     * replaces: 40 g of aioli is ~1,080 kJ and no protein at all, so swapping it for
-     * 100 g of this is -700 kJ AND +6.4 g protein. A sauce that is not a liability,
-     * rather than a way to hit a protein target.
-     *
-     * The olive oil is 185 kJ of the batch, 17% of it. Plenty of homemade tzatziki has
-     * none; leave it out and the row falls to ~315 kJ/100 g on full-fat yoghurt.
+     * With the oil gone this is 47 kJ per gram of protein rather than 59, which moves
+     * it from "a sauce that is not a liability" to a genuine contributor — on par with
+     * the Greenstreat burrito and ahead of the Musashi bar. Against the 40 g of aioli
+     * it replaces (~1,080 kJ, no protein) the whole bowl is still the cheaper option.
      */
-    kj: 380,
-    servingGrams: 100,
-    protein: 6.4,
-    carbs: 4,
-    fat: 5.1,
-    source: 'Component build-up on full-fat Greek yoghurt; low-fat gives ~276 kJ/100 g',
-    confidence: 'low',
+    kj: 550,
+    servingGrams: 170,
+    protein: 11.8,
+    carbs: 5.8,
+    fat: 6.1,
+    source: 'As made — 170 g weighed; full-fat yoghurt assumed, low-fat gives ~355 kJ',
+    confidence: 'medium',
   },
   {
     name: 'Lunch you forgot to log — rough guess',
