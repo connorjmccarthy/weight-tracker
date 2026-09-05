@@ -971,6 +971,19 @@ export const FOODS: Food[] = [
     "source": "calcount AU 'Pasta with carbonara sauce' ~191 kcal/100 g = 800 kJ/100 g; plate size assumed"
   },
   {
+    "id": "tzatziki-homemade",
+    "name": "Tzatziki, homemade",
+    "category": "homecooked",
+    "servingLabel": "100 g — a generous dollop",
+    "kj": 380,
+    "confidence": "low",
+    "servingGrams": 100,
+    "protein": 6.4,
+    "carbs": 4,
+    "fat": 5.1,
+    "source": "Component build-up on full-fat Greek yoghurt; low-fat gives ~276 kJ/100 g"
+  },
+  {
     "id": "wonton-pan-fried",
     "name": "Wonton, pan-fried",
     "category": "homecooked",
