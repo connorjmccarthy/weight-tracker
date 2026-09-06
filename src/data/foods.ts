@@ -494,6 +494,20 @@ export const FOODS: Food[] = [
     "source": "Modelled at ~1,050 kJ/100 g, cross-checked against the Grill'd panel"
   },
   {
+    "id": "grazie-pork-pineapple-pizza-slice",
+    "name": "Grazie pork & pineapple pizza, slice",
+    "category": "restaurant",
+    "servingLabel": "1 slice (an eighth of an 11 inch)",
+    "kj": 790,
+    "confidence": "low",
+    "brand": "Grazie",
+    "servingGrams": 75,
+    "protein": 8.3,
+    "carbs": 19.5,
+    "fat": 7.9,
+    "source": "Area and density build-up from the menu description; diameter unconfirmed"
+  },
+  {
     "id": "half-roast-chicken-with-sides-restaurant",
     "name": "Half roast chicken",
     "category": "restaurant",

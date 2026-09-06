@@ -1071,6 +1071,45 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Grazie pork & pineapple pizza, slice',
+    brand: 'Grazie',
+    category: 'restaurant',
+    servingLabel: '1 slice (an eighth of an 11 inch)',
+    /*
+     * Tomato base, ham, bacon, pulled pork, pineapple, hickory sauce swirl. Three cured
+     * meats and a sugary swirl push the density up; the pineapple, which is mostly
+     * water, pulls it back. Net ~1,040 kJ per 100 g, a shade under a straight meat
+     * pizza.
+     *
+     * DIAMETER IS THE WHOLE ESTIMATE AND THE PHOTO CANNOT SETTLE IT. The menu shows
+     * $22-$34, so at least two sizes exist, and a slice is not a fixed thing:
+     *
+     *   9 inch  (23 cm)  ~430 g   ~4,500 total   6 slices   ~750/slice
+     *   11 inch (28 cm)  ~600 g   ~6,300 total   8 slices   ~790/slice
+     *   13 inch (33 cm)  ~830 g   ~8,700 total   8 slices  ~1,090/slice
+     *
+     * This row is the 11 inch. Ask the shop what size they sell and the row is fixed
+     * with one fact — that single question is worth more than any refinement of the
+     * recipe modelling here.
+     *
+     * Consistent with the other pizza row: that one is 875 kJ for an eighth of a 12
+     * inch, this is 790 for an eighth of an 11. Slightly smaller slice, slightly
+     * lighter toppings, and the two agree to within a few percent on density, which is
+     * the check that matters when both are estimates.
+     *
+     * Per slice for the same reasons as before: a whole pizza is a shareable item, not
+     * a serving, and the 6,000 kJ implausibility guard exists to catch per-100 g values
+     * recorded as per-serving. Whole 11 inch = 8 servings.
+     */
+    kj: 790,
+    servingGrams: 75,
+    protein: 8.3,
+    carbs: 19.5,
+    fat: 7.9,
+    source: 'Area and density build-up from the menu description; diameter unconfirmed',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
