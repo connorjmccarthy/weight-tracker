@@ -1040,6 +1040,37 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: "KFC Chris' Big Bro Combo",
+    brand: 'KFC',
+    category: 'fastfood',
+    servingLabel: '1 combo — double Zinger fillet, lettuce, no mayo, Pepsi Max',
+    /*
+     * 2,401 kJ (574 Cal), 48 g protein, 40 g carbohydrate, 24.2 g fat. Two sources
+     * agree, and the macros reconcile to 2,391 against the stated 2,401 — 0.4% out,
+     * which is a well-formed panel rather than a reconstruction.
+     *
+     * A secret-menu item built for exactly this purpose: double fillet for the protein,
+     * lettuce instead of mayo, and a zero-kilojoule drink. The Pepsi Max is ~6 kJ, so
+     * essentially all of this is the burger. Ordering it with a sugar Pepsi instead
+     * adds ~700 and undoes a third of the point.
+     *
+     * THE COMPARISON THAT MATTERS IS WITH THE OTHER KFC ROW HERE. The $10 Boxfull is
+     * 3,872 kJ for 36.1 g protein — 107 kJ per gram. This is 50. Same restaurant, same
+     * queue: -1,471 kJ and +11.9 g protein for choosing one over the other. There is no
+     * other single swap in this database that does that much.
+     *
+     * Looked up rather than estimated, on the rule this database learned the hard way.
+     * The last KFC item built here from assumed piece counts was 12% high on energy and
+     * 44% high on protein.
+     */
+    kj: 2401,
+    protein: 48,
+    carbs: 40,
+    fat: 24.2,
+    source: 'FatSecret AU and Australian menu coverage; macros reconcile to 0.4%',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

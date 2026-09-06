@@ -269,6 +269,19 @@ export const FOODS: Food[] = [
     "source": "KFC Australia published nutrition panel"
   },
   {
+    "id": "kfc-chris-big-bro-combo",
+    "name": "KFC Chris' Big Bro Combo",
+    "category": "fastfood",
+    "servingLabel": "1 combo — double Zinger fillet, lettuce, no mayo, Pepsi Max",
+    "kj": 2401,
+    "confidence": "high",
+    "brand": "KFC",
+    "protein": 48,
+    "carbs": 40,
+    "fat": 24.2,
+    "source": "FatSecret AU and Australian menu coverage; macros reconcile to 0.4%"
+  },
+  {
     "id": "mcdonalds-mcchicken",
     "name": "McChicken",
     "category": "fastfood",
