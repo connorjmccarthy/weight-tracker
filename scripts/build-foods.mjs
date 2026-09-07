@@ -1110,6 +1110,35 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Chicken nachos (home-cooked)',
+    category: 'homecooked',
+    servingLabel: '1 plate — 315 g weighed',
+    /*
+     * WEIGHED AT 315 g, so the amount of food is known and only the split inside it is
+     * modelled. Corn chips ~70 g (1,435), spiced chicken mince with black beans ~120 g
+     * (840), cheese ~35 g (570), salsa ~40 g (52), avocado cream ~45 g (280).
+     *
+     * THE CORN CHIPS ARE 45% OF THE ENERGY AND 12% OF THE PROTEIN. They are also barely
+     * a fifth of the weight — corn chips are ~2,050 kJ per 100 g, denser than anything
+     * else on the plate by a distance, because they are fried cornmeal. This is the
+     * same shape as the parmy and its chips, except here the quantity is set at home
+     * rather than by a kitchen: 30 g fewer chips is ~615 kJ and costs 1.4 g of protein.
+     *
+     * The base underneath them is genuinely good. Chicken mince and black beans is the
+     * best-value part of this plate, and building the dish with more of it and fewer
+     * chips moves the whole thing without changing what it is.
+     *
+     * Density 1,016 kJ per 100 g, mid-range for nachos (900-1,200).
+     */
+    kj: 3200,
+    servingGrams: 315,
+    protein: 38,
+    carbs: 60,
+    fat: 43,
+    source: 'Weighed at 315 g; component split modelled',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

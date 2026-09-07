@@ -770,6 +770,19 @@ export const FOODS: Food[] = [
     "source": "calcount AU chicken curry ~122 kcal/100 g = 510 kJ/100 g + cooked white rice 545 kJ/100 g; plate size assumed"
   },
   {
+    "id": "chicken-nachos-home-cooked",
+    "name": "Chicken nachos (home-cooked)",
+    "category": "homecooked",
+    "servingLabel": "1 plate — 315 g weighed",
+    "kj": 3200,
+    "confidence": "medium",
+    "servingGrams": 315,
+    "protein": 38,
+    "carbs": 60,
+    "fat": 43,
+    "source": "Weighed at 315 g; component split modelled"
+  },
+  {
     "id": "chicken-schnitzel-crumbed-oven-baked",
     "name": "Chicken schnitzel, crumbed (oven-baked)",
     "category": "homecooked",
