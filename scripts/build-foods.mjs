@@ -1139,6 +1139,75 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: 'Crumbed chicken thigh, oven-baked',
+    category: 'homecooked',
+    servingLabel: '1 thigh (~120 g raw crumbed, ~100 g cooked)',
+    /*
+     * Boneless thigh ~92 g raw (500), coating ~28 g (406), light spray (50).
+     *
+     * Sits almost exactly where the weighed BREAST schnitzel does when baked — 950
+     * against 910 — which looks wrong until the two effects are separated. Thigh is
+     * ~14% denser per gram than breast, but a thigh piece is a little smaller than the
+     * 127 g schnitzel that was weighed, and the two cancel. Thigh is the better-tasting
+     * cut at effectively no cost when baked.
+     *
+     * Pan-fried instead adds ~410, the same fryer-oil penalty as the breast schnitzel.
+     * Baked is what makes this cut cheap; the cut itself never was the problem.
+     *
+     * Log 2.5 servings for two and a half.
+     */
+    kj: 950,
+    servingGrams: 100,
+    protein: 21,
+    carbs: 18,
+    fat: 9,
+    source: 'Component build-up; coating share matched to the weighed schnitzel',
+    confidence: 'medium',
+  },
+  {
+    name: 'Coleslaw, creamy',
+    category: 'staple',
+    servingLabel: '100 g — a small side is ~50 g',
+    /*
+     * Cabbage and carrot are almost free; the mayonnaise is the entire row. At ~700 kJ
+     * per 100 g this is roughly twenty times the energy of the vegetables in it, which
+     * is why coleslaw and lettuce are not interchangeable sides even though they look
+     * like the same kind of thing on a plate.
+     *
+     * A vinegar-dressed slaw runs ~300 kJ/100 g instead. Same crunch, half the row.
+     */
+    kj: 700,
+    servingGrams: 100,
+    protein: 1.3,
+    carbs: 7,
+    fat: 15,
+    source: 'Standard mayonnaise-dressed coleslaw',
+    confidence: 'low',
+  },
+  {
+    name: 'Philadelphia Light, spreadable',
+    brand: 'Philadelphia',
+    category: 'staple',
+    servingLabel: '1 standard serve (20 g)',
+    /*
+     * ~1,020 kJ per 100 g for the Light spreadable — Original is ~1,270 and Light is
+     * declared at 25% less fat.
+     *
+     * NOT CHASED FURTHER ON PURPOSE. Extra Light is a different product at ~553 kJ per
+     * 100 g, nearly half, and the two are easy to confuse on a shelf. But at the 10 g
+     * that half a serve represents, the entire question is worth ~50 kJ — less than the
+     * uncertainty in a spoonful of coleslaw. Precision here would be effort spent where
+     * it cannot change an answer.
+     */
+    kj: 204,
+    servingGrams: 20,
+    protein: 1.5,
+    carbs: 1.1,
+    fat: 4.2,
+    source: 'Philadelphia Light ~1,020 kJ/100 g; Extra Light is ~553 if that is the tub',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

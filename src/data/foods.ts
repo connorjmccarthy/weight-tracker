@@ -822,6 +822,19 @@ export const FOODS: Food[] = [
     "source": "calcount AU 'Chilli con carne, homemade' 120 kcal/100 g = 502 kJ/100 g + cooked white rice 545 kJ/100 g; plate size assumed"
   },
   {
+    "id": "crumbed-chicken-thigh-oven-baked",
+    "name": "Crumbed chicken thigh, oven-baked",
+    "category": "homecooked",
+    "servingLabel": "1 thigh (~120 g raw crumbed, ~100 g cooked)",
+    "kj": 950,
+    "confidence": "medium",
+    "servingGrams": 100,
+    "protein": 21,
+    "carbs": 18,
+    "fat": 9,
+    "source": "Component build-up; coating share matched to the weighed schnitzel"
+  },
+  {
     "id": "dads-cheese-sauce-gnocchi",
     "name": "Dad's cheese sauce gnocchi",
     "category": "homecooked",
@@ -1562,6 +1575,19 @@ export const FOODS: Food[] = [
     "source": "estimate — composed from a 60 g tortilla, 100 g cooked chicken, salad and dressing. Second default for the unreported lunch slot"
   },
   {
+    "id": "coleslaw-creamy",
+    "name": "Coleslaw, creamy",
+    "category": "staple",
+    "servingLabel": "100 g — a small side is ~50 g",
+    "kj": 700,
+    "confidence": "low",
+    "servingGrams": 100,
+    "protein": 1.3,
+    "carbs": 7,
+    "fat": 15,
+    "source": "Standard mayonnaise-dressed coleslaw"
+  },
+  {
     "id": "crumpet",
     "name": "Crumpet",
     "category": "staple",
@@ -1662,6 +1688,20 @@ export const FOODS: Food[] = [
     "carbs": 41,
     "fat": 1.4,
     "source": "AUSNUT/AFCD-typical boiled pasta ~600 kJ/100 g; cross-checked vs calcount 'Pasta, plain, boiled'"
+  },
+  {
+    "id": "philadelphia-light-spreadable",
+    "name": "Philadelphia Light, spreadable",
+    "category": "staple",
+    "servingLabel": "1 standard serve (20 g)",
+    "kj": 204,
+    "confidence": "low",
+    "brand": "Philadelphia",
+    "servingGrams": 20,
+    "protein": 1.5,
+    "carbs": 1.1,
+    "fat": 4.2,
+    "source": "Philadelphia Light ~1,020 kJ/100 g; Extra Light is ~553 if that is the tub"
   },
   {
     "id": "potato-boiled",
