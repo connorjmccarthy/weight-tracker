@@ -481,6 +481,19 @@ export const FOODS: Food[] = [
     "source": "Greenstreat published nutrition panel"
   },
   {
+    "id": "chicken-karaage",
+    "name": "Chicken karaage",
+    "category": "restaurant",
+    "servingLabel": "1 restaurant serve (~8 pieces) with dipping sauce",
+    "kj": 2300,
+    "confidence": "low",
+    "servingGrams": 205,
+    "protein": 32,
+    "carbs": 27,
+    "fat": 32,
+    "source": "Component build-up, density-checked against published karaage figures"
+  },
+  {
     "id": "chips-pub-serve",
     "name": "Chips, pub serve",
     "category": "restaurant",

@@ -1208,6 +1208,39 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Chicken karaage',
+    category: 'restaurant',
+    servingLabel: '1 restaurant serve (~8 pieces) with dipping sauce',
+    /*
+     * Thigh marinated in soy, sake and ginger, coated in potato starch, deep-fried.
+     * Built from: thigh ~180 g raw (1,080), potato starch ~20 g (290), marinade (40),
+     * absorbed frying oil ~20 g (740), dipping sauce ~30 g (150).
+     *
+     * ~270 kJ per piece at eight pieces, which is the number to scale if the count
+     * differs — venues run 5 to 10. The photo is a styled menu shot rather than a
+     * plate as served, so the count in it proves nothing.
+     *
+     * THE COATING IS NOT THE PROBLEM HERE, THE FRYER IS. Potato starch is a far lighter
+     * coating than breadcrumb — 290 kJ against the ~435 on a crumbed thigh — but the
+     * absorbed oil is 740, a third of the dish. Karaage looks like the lean choice next
+     * to a schnitzel and is not.
+     *
+     * The comparison worth carrying: the SAME CUT baked and crumbed is 45 kJ per gram
+     * of protein; as karaage it is 71. Identical chicken, and the entire gap is the
+     * coating and the oil.
+     *
+     * Density ~1,229 kJ per 100 g of chicken, top of the 1,100-1,300 band for fried
+     * chicken and consistent with published karaage figures near 1,215.
+     */
+    kj: 2300,
+    servingGrams: 205,
+    protein: 32,
+    carbs: 27,
+    fat: 32,
+    source: 'Component build-up, density-checked against published karaage figures',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
