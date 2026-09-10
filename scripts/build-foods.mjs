@@ -1241,6 +1241,58 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Bao bun, plain steamed',
+    category: 'staple',
+    servingLabel: '1 bun (~48 g), empty',
+    /*
+     * The bun on its own — flour, a little sugar and fat, steamed. ~1,100 kJ per 100 g,
+     * so ~520 for a standard folded gua bao.
+     *
+     * Filed empty on purpose. The filled Korean fried chicken bao already here is
+     * 1,500 kJ, so the bun is a third of it and the filling is the other two-thirds —
+     * which is only visible if the two are separate rows. Pair this with a protein row
+     * to build whatever the bao actually was.
+     */
+    kj: 520,
+    servingGrams: 48,
+    protein: 3.8,
+    carbs: 22,
+    fat: 2.2,
+    source: 'Standard steamed bao dough at ~1,100 kJ/100 g',
+    confidence: 'low',
+  },
+  {
+    name: 'Pork shoulder, boxed',
+    category: 'protein',
+    servingLabel: '1 serve (4 serves per box)',
+    /*
+     * YOUR PACK FIGURES: 1,390 kJ and 26.2 g protein per serve, four serves to the box
+     * — so the whole box is 5,560 kJ and 105 g of protein.
+     *
+     * THE FAT AND CARBOHYDRATE SPLIT IS MINE, NOT THE PACK'S. Protein accounts for 445
+     * of the 1,390; the remaining 945 has to come from fat and carbohydrate, and how it
+     * divides depends on whether this is plain shoulder or sauced. Plain would be ~25 g
+     * fat and no carbohydrate; a sauced pulled pork more like 18 g fat and 15 g carbs.
+     * Filed in the middle at 22 g fat and 8 g carbs, reconciling to 1,395.
+     *
+     * Nothing downstream turns on that split — the energy and the protein are the two
+     * numbers this app plans with, and both came off the box. If the panel is to hand,
+     * the fat line alone settles it.
+     *
+     * No serving weight recorded: the pack gave energy and protein, not grams, and
+     * inventing one would put a fabricated number next to two real ones.
+     *
+     * At 53 kJ per gram of protein this is among the better protein sources here —
+     * level with a baked schnitzel dinner and well ahead of karaage at 71.
+     */
+    kj: 1390,
+    protein: 26.2,
+    carbs: 8,
+    fat: 22,
+    source: 'Your pack: 1,390 kJ and 26.2 g protein per serve; fat/carb split inferred',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

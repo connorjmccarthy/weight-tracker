@@ -1475,6 +1475,18 @@ export const FOODS: Food[] = [
     "source": "AUSNUT-typical lean cooked beef steak ~790 kJ/100 g. Best protein-per-kJ of the red meats for a cut"
   },
   {
+    "id": "pork-shoulder-boxed",
+    "name": "Pork shoulder, boxed",
+    "category": "protein",
+    "servingLabel": "1 serve (4 serves per box)",
+    "kj": 1390,
+    "confidence": "medium",
+    "protein": 26.2,
+    "carbs": 8,
+    "fat": 22,
+    "source": "Your pack: 1,390 kJ and 26.2 g protein per serve; fat/carb split inferred"
+  },
+  {
     "id": "salmon-cooked",
     "name": "Salmon, cooked",
     "category": "protein",
@@ -1536,6 +1548,19 @@ export const FOODS: Food[] = [
     "carbs": 2,
     "fat": 2,
     "source": "Typical AU WPI/WPC 30 g scoop ≈ 120 kcal = 500 kJ; isolate 25–27 g protein, concentrate 21–24 g"
+  },
+  {
+    "id": "bao-bun-plain-steamed",
+    "name": "Bao bun, plain steamed",
+    "category": "staple",
+    "servingLabel": "1 bun (~48 g), empty",
+    "kj": 520,
+    "confidence": "low",
+    "servingGrams": 48,
+    "protein": 3.8,
+    "carbs": 22,
+    "fat": 2.2,
+    "source": "Standard steamed bao dough at ~1,100 kJ/100 g"
   },
   {
     "id": "brown-rice-cooked",
