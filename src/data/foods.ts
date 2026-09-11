@@ -546,6 +546,20 @@ export const FOODS: Food[] = [
     "source": "Component build-up"
   },
   {
+    "id": "little-h-fried-chicken-burger",
+    "name": "Little H fried chicken burger",
+    "category": "restaurant",
+    "servingLabel": "1 burger (~345 g) — Friday night special",
+    "kj": 4000,
+    "confidence": "low",
+    "brand": "Little H Cafe",
+    "servingGrams": 345,
+    "protein": 49,
+    "carbs": 68,
+    "fat": 49,
+    "source": "Component build-up from the posted description; density-checked"
+  },
+  {
     "id": "loaded-gochujang-fries",
     "name": "Loaded gochujang fries",
     "category": "restaurant",
@@ -1907,6 +1921,19 @@ export const FOODS: Food[] = [
     "carbs": 8,
     "fat": 0.5,
     "source": "AUSNUT-typical mixed steamed vegetables ~165 kJ/100 g. Nutrition Australia standard vegetable serve is 75 g, so this is 2 serves"
+  },
+  {
+    "id": "spud-lite-potato-300-g",
+    "name": "Spud Lite potato, 300 g",
+    "category": "produce",
+    "servingLabel": "300 g raw",
+    "kj": 630,
+    "confidence": "high",
+    "brand": "Spud Lite",
+    "servingGrams": 300,
+    "protein": 3,
+    "carbs": 26.7,
+    "source": "CalorieKing AU and Foodwatch: 209 kJ/100 g, 8.9 g carbohydrate"
   },
   {
     "id": "almonds-handful",

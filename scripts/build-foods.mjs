@@ -1293,6 +1293,66 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: 'Little H fried chicken burger',
+    brand: 'Little H Cafe',
+    category: 'restaurant',
+    servingLabel: '1 burger (~345 g) — Friday night special',
+    /*
+     * House fried chicken, sweet chilli, aioli, bacon, Swiss cheese, lettuce, milk bun.
+     * Built from the parts: milk bun 80 g (1,000), fried chicken — 120 g raw plus 30 g
+     * coating plus ~15 g absorbed oil (1,590), bacon 25 g cooked (410), Swiss 20 g
+     * (280), aioli 20 g (540), sweet chilli 15 g (145), lettuce (15).
+     *
+     * Density 1,159 kJ per 100 g, which is the check that caught a first pass at 4,400.
+     * That version put the burger at 1,294 kJ/100 g, and loaded burgers run 1,000-1,200
+     * — a Big Mac is 995. Being denser per gram than a Big Mac is possible for a café
+     * burger, but not by 30%, so the aioli and the oil came back down.
+     *
+     * THE SAUCES ARE 685 kJ AND NO PROTEIN. Aioli is ~2,700 kJ per 100 g — the densest
+     * thing in the burger by some way, denser than the fried chicken. Ordering it
+     * without aioli saves ~540 for nothing you would miss under sweet chilli.
+     *
+     * The milk bun is the other quiet line: enriched with milk and butter, ~1,250 kJ
+     * per 100 g against ~1,050 for a plain bun.
+     */
+    kj: 4000,
+    servingGrams: 345,
+    protein: 49,
+    carbs: 68,
+    fat: 49,
+    source: 'Component build-up from the posted description; density-checked',
+    confidence: 'low',
+  },
+  {
+    name: 'Spud Lite potato, 300 g',
+    brand: 'Spud Lite',
+    category: 'produce',
+    servingLabel: '300 g raw',
+    /*
+     * Published figures, 209 kJ per 100 g: 1 g protein, 8.9 g carbohydrate, no fat,
+     * 10 mg sodium. Grown by Zerella Fresh in South Australia and marketed on having
+     * ~25% less carbohydrate than the potatoes they tested — which the panel bears out
+     * against a regular potato's ~15 g.
+     *
+     * Macros reconcile to 505 kJ against 627, 20% under. That is the fibre, which
+     * carries energy but sits outside "carbohydrate" on an Australian panel, and it is
+     * why the reconciliation gate here allows 20% rather than something tighter.
+     *
+     * RAW WEIGHT, AND THE COOKING IS THE WHOLE STORY. Boiled or steamed this stays at
+     * ~630 kJ. Roasted in a tablespoon of oil it is ~1,190; turned into chips it is
+     * past 2,000. 300 g of potato is one of the cheapest large volumes of food
+     * available — a third of a Bunnings snag for a plateful — but only until it meets
+     * a fat.
+     */
+    kj: 630,
+    servingGrams: 300,
+    protein: 3,
+    carbs: 26.7,
+    fat: 0,
+    source: 'CalorieKing AU and Foodwatch: 209 kJ/100 g, 8.9 g carbohydrate',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
