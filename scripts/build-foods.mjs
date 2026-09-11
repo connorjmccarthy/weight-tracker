@@ -1296,30 +1296,32 @@ const EXTRA = [
     name: 'Little H fried chicken burger',
     brand: 'Little H Cafe',
     category: 'restaurant',
-    servingLabel: '1 burger (~345 g) — Friday night special',
+    servingLabel: '1 burger, no aioli (~325 g) — Friday night special',
     /*
-     * House fried chicken, sweet chilli, aioli, bacon, Swiss cheese, lettuce, milk bun.
+     * House fried chicken, sweet chilli, bacon, Swiss cheese, lettuce, milk bun.
      * Built from the parts: milk bun 80 g (1,000), fried chicken — 120 g raw plus 30 g
      * coating plus ~15 g absorbed oil (1,590), bacon 25 g cooked (410), Swiss 20 g
-     * (280), aioli 20 g (540), sweet chilli 15 g (145), lettuce (15).
+     * (280), sweet chilli 15 g (145), lettuce (15).
      *
-     * Density 1,159 kJ per 100 g, which is the check that caught a first pass at 4,400.
-     * That version put the burger at 1,294 kJ/100 g, and loaded burgers run 1,000-1,200
-     * — a Big Mac is 995. Being denser per gram than a Big Mac is possible for a café
-     * burger, but not by 30%, so the aioli and the oil came back down.
+     * NO AIOLI — that is how he orders it, so the row is built without rather than
+     * built with and mentally subtracted. Add ~540 kJ and ~14.5 g fat if it ever goes
+     * on. This is not a trivial edit the way the sausage sizzle's tomato sauce was:
+     * aioli is ~2,700 kJ per 100 g, denser than the fried chicken it sits on, and
+     * leaving it off is 14% of the burger for something invisible under sweet chilli.
      *
-     * THE SAUCES ARE 685 kJ AND NO PROTEIN. Aioli is ~2,700 kJ per 100 g — the densest
-     * thing in the burger by some way, denser than the fried chicken. Ordering it
-     * without aioli saves ~540 for nothing you would miss under sweet chilli.
+     * Density 1,065 kJ per 100 g. Loaded burgers run 1,000-1,200 and a Big Mac is 995,
+     * so dropping the aioli moved this from the top of that band to the middle — where
+     * a café burger belongs. A first pass at 4,400 WITH aioli was rejected by this same
+     * check at 1,294, which is denser per gram than a Big Mac by 30%.
      *
      * The milk bun is the other quiet line: enriched with milk and butter, ~1,250 kJ
      * per 100 g against ~1,050 for a plain bun.
      */
-    kj: 4000,
-    servingGrams: 345,
+    kj: 3460,
+    servingGrams: 325,
     protein: 49,
     carbs: 68,
-    fat: 49,
+    fat: 34.5,
     source: 'Component build-up from the posted description; density-checked',
     confidence: 'low',
   },

@@ -549,14 +549,14 @@ export const FOODS: Food[] = [
     "id": "little-h-fried-chicken-burger",
     "name": "Little H fried chicken burger",
     "category": "restaurant",
-    "servingLabel": "1 burger (~345 g) — Friday night special",
-    "kj": 4000,
+    "servingLabel": "1 burger, no aioli (~325 g) — Friday night special",
+    "kj": 3460,
     "confidence": "low",
     "brand": "Little H Cafe",
-    "servingGrams": 345,
+    "servingGrams": 325,
     "protein": 49,
     "carbs": 68,
-    "fat": 49,
+    "fat": 34.5,
     "source": "Component build-up from the posted description; density-checked"
   },
   {
