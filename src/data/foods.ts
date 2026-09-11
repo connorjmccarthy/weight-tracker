@@ -282,6 +282,20 @@ export const FOODS: Food[] = [
     "source": "FatSecret AU and Australian menu coverage; macros reconcile to 0.4%"
   },
   {
+    "id": "kfc-wicked-boneless-piece",
+    "name": "KFC Wicked Boneless, piece",
+    "category": "fastfood",
+    "servingLabel": "1 piece (~48 g)",
+    "kj": 478,
+    "confidence": "medium",
+    "brand": "KFC",
+    "servingGrams": 48,
+    "protein": 9.3,
+    "carbs": 6.7,
+    "fat": 5.7,
+    "source": "FatSecret AU 3- and 6-piece panels (agree per piece); fat/carb split inferred"
+  },
+  {
     "id": "mcdonalds-mcchicken",
     "name": "McChicken",
     "category": "fastfood",

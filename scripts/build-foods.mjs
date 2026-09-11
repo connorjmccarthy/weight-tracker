@@ -1355,6 +1355,40 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'KFC Wicked Boneless, piece',
+    brand: 'KFC',
+    category: 'fastfood',
+    servingLabel: '1 piece (~48 g)',
+    /*
+     * Published AU figures at two serve sizes, and they agree exactly: 3 pieces is
+     * 144 g / 1,435 kJ / 28 g protein, 6 pieces is 288 g / 2,866 kJ. Both come to
+     * 478 kJ and 9.3 g protein a piece. Two independently listed serve sizes landing
+     * on the same per-piece number is a real check, not just the same figure twice.
+     *
+     * ENERGY AND PROTEIN ARE PUBLISHED; THE FAT AND CARB SPLIT IS MINE. Protein
+     * accounts for 476 of the 1,435 in a 3-piece; the rest is divided as ~20 g
+     * carbohydrate and ~17 g fat across the serve, reconciling to 1,445. Confidence is
+     * medium for that reason, the same as the boxed pork shoulder — the two numbers
+     * the app plans with are real, the other two are reasoning.
+     *
+     * 997 kJ per 100 g, notably lighter than karaage at 1,229 despite both being
+     * crumbed fried chicken. The difference is the cut: this is breast, karaage is
+     * thigh.
+     *
+     * At 51 kJ per gram of protein these are the equal of the Big Bro Combo (50) and
+     * twice as efficient as the $10 Boxfull (107) — the best-value thing on this menu
+     * per piece. Six of them is 2,866 kJ for 56 g of protein, which is a whole meal at
+     * a better ratio than most dinners in this database.
+     */
+    kj: 478,
+    servingGrams: 48,
+    protein: 9.3,
+    carbs: 6.7,
+    fat: 5.7,
+    source: 'FatSecret AU 3- and 6-piece panels (agree per piece); fat/carb split inferred',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
