@@ -2008,11 +2008,11 @@ export const FOODS: Food[] = [
     "name": "Jellybean",
     "category": "snack",
     "servingLabel": "1 bean (~3.5 g) — log 6 for six",
-    "kj": 52,
-    "confidence": "low",
+    "kj": 50,
+    "confidence": "medium",
     "servingGrams": 3.5,
-    "carbs": 3.3,
-    "source": "Standard jellybean composition at ~1,470 kJ/100 g"
+    "carbs": 3,
+    "source": "Photographed panel: 1,440 kJ/100 g; bean weight still estimated at ~3.5 g"
   },
   {
     "id": "kettle-chips-cafe-side",

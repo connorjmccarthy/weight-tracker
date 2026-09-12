@@ -1518,21 +1518,30 @@ const EXTRA = [
     category: 'snack',
     servingLabel: '1 bean (~3.5 g) — log 6 for six',
     /*
-     * Sugar and glucose syrup, ~1,470 kJ per 100 g, no protein or fat. At ~3.5 g a
-     * bean that is ~52 kJ, so six is ~310.
+     * Panel photographed off the bag: 1,440 kJ per 100 g, 0.2 g protein, under 0.1 g
+     * fat, 84.8 g carbohydrate of which 55.2 g sugars, 17 mg sodium. Sugar and 33%
+     * glucose syrup. The 1 kg bag declares 40 serves of 25 g.
      *
-     * Filed per bean because the count is the only variable. Bean size is the
-     * uncertainty and it is wide — a small Jelly Belly is 1.1 g and an Allen's is
-     * closer to 5 — so six could be anywhere from 100 to 440 kJ. Nothing here is worth
-     * narrowing: at six beans the whole range is under 350 kJ, roughly 5% of a gym day.
+     * THE DENSITY IS NOW SETTLED; THE BEAN WEIGHT IS NOT. The panel gives energy by
+     * weight and says nothing about how many beans make 25 g, so the per-bean figure
+     * still rests on ~3.5 g a bean — that is the only estimate left in this row, and
+     * it is the one that matters, because nobody counts jellybeans in grams.
+     *
+     * Six beans on the scale would fix it permanently. Until then treat six as
+     * 300 kJ give or take a third.
+     *
+     * (The earlier version of this row guessed 1,470 kJ/100 g against the panel's
+     * 1,440 — within 2%. Confectionery is one of the few categories where composition
+     * is guessable, because it is essentially all sugar and there is nowhere for an
+     * estimate to go wrong.)
      */
-    kj: 52,
+    kj: 50,
     servingGrams: 3.5,
     protein: 0,
-    carbs: 3.25,
+    carbs: 3,
     fat: 0,
-    source: 'Standard jellybean composition at ~1,470 kJ/100 g',
-    confidence: 'low',
+    source: 'Photographed panel: 1,440 kJ/100 g; bean weight still estimated at ~3.5 g',
+    confidence: 'medium',
   },
   {
     name: 'Lunch you forgot to log — rough guess',
