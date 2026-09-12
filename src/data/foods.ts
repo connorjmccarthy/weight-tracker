@@ -2004,6 +2004,17 @@ export const FOODS: Food[] = [
     "source": "AUSNUT-typical raw almonds ~2560 kJ/100 g"
   },
   {
+    "id": "jellybean",
+    "name": "Jellybean",
+    "category": "snack",
+    "servingLabel": "1 bean (~3.5 g) — log 6 for six",
+    "kj": 52,
+    "confidence": "low",
+    "servingGrams": 3.5,
+    "carbs": 3.3,
+    "source": "Standard jellybean composition at ~1,470 kJ/100 g"
+  },
+  {
     "id": "kettle-chips-cafe-side",
     "name": "Kettle chips, cafe side",
     "category": "snack",

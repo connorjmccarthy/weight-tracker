@@ -1514,6 +1514,27 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Jellybean',
+    category: 'snack',
+    servingLabel: '1 bean (~3.5 g) — log 6 for six',
+    /*
+     * Sugar and glucose syrup, ~1,470 kJ per 100 g, no protein or fat. At ~3.5 g a
+     * bean that is ~52 kJ, so six is ~310.
+     *
+     * Filed per bean because the count is the only variable. Bean size is the
+     * uncertainty and it is wide — a small Jelly Belly is 1.1 g and an Allen's is
+     * closer to 5 — so six could be anywhere from 100 to 440 kJ. Nothing here is worth
+     * narrowing: at six beans the whole range is under 350 kJ, roughly 5% of a gym day.
+     */
+    kj: 52,
+    servingGrams: 3.5,
+    protein: 0,
+    carbs: 3.25,
+    fat: 0,
+    source: 'Standard jellybean composition at ~1,470 kJ/100 g',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
