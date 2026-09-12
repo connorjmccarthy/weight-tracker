@@ -1482,6 +1482,38 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Apple pie, slice (eighth of the pack)',
+    category: 'dessert',
+    servingLabel: '1 slice — pie cut into 8, ~94 g',
+    /*
+     * From the photographed panel, rescaled from the pack's own division to his.
+     *
+     * The pack declares 10 serves of 75 g at 840 kJ each — so 750 g and 8,400 kJ for
+     * the whole pie, at 1,120 kJ per 100 g. Cut into EIGHT instead, a slice is 93.75 g
+     * and 1,050 kJ.
+     *
+     * CUTTING IT INTO 8 DOES NOT ADD ANYTHING TO THE PIE. The pack's "10 serves" is not
+     * a recommendation, it is just how the manufacturer divided 750 g, and the only
+     * thing that changes is what the word "slice" means. It matters solely for logging:
+     * a slice recorded at the pack's 840 when it is actually an eighth is 210 kJ short
+     * every time, and across a pie that is a missing 1,680.
+     *
+     * This is the reason the app snapshots kJ onto a log entry rather than pointing at
+     * the food — a row redefined later must never quietly rewrite what was already
+     * eaten.
+     *
+     * Sugars are 19.6 g in a slice of this size, most of the 36.4 g of carbohydrate.
+     * The whole pie is 8,400 kJ, more than a full day's budget.
+     */
+    kj: 1050,
+    servingGrams: 94,
+    protein: 2.3,
+    carbs: 36.4,
+    fat: 10.3,
+    source: 'Photographed panel: 1,120 kJ/100 g, 750 g pack; rescaled to 8 slices',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

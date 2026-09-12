@@ -2083,6 +2083,19 @@ export const FOODS: Food[] = [
     "source": "Your figures; macro split differs from typical kettle-chip panels"
   },
   {
+    "id": "apple-pie-slice-eighth-of-the-pack",
+    "name": "Apple pie, slice (eighth of the pack)",
+    "category": "dessert",
+    "servingLabel": "1 slice — pie cut into 8, ~94 g",
+    "kj": 1050,
+    "confidence": "high",
+    "servingGrams": 94,
+    "protein": 2.3,
+    "carbs": 36.4,
+    "fat": 10.3,
+    "source": "Photographed panel: 1,120 kJ/100 g, 750 g pack; rescaled to 8 slices"
+  },
+  {
     "id": "ice-cream-vanilla-2-scoops",
     "name": "Ice cream, vanilla, 2 scoops",
     "category": "dessert",
