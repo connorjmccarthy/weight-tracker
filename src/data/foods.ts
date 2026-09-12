@@ -1516,6 +1516,20 @@ export const FOODS: Food[] = [
     "source": "AUSNUT-typical lean cooked beef steak ~790 kJ/100 g. Best protein-per-kJ of the red meats for a cut"
   },
   {
+    "id": "perfect-melt-grated-cheese-75-g",
+    "name": "Perfect Melt grated cheese, 75 g",
+    "category": "protein",
+    "servingLabel": "75 g (3 × 25 g pack serves)",
+    "kj": 1028,
+    "confidence": "high",
+    "brand": "Perfect Italiano",
+    "servingGrams": 75,
+    "protein": 19.5,
+    "carbs": 0.7,
+    "fat": 18.8,
+    "source": "Perfect Italiano Perfect Melt panel, photographed: 1,370 kJ/100 g"
+  },
+  {
     "id": "pork-shoulder-boxed",
     "name": "Pork shoulder, boxed",
     "category": "protein",
@@ -1781,6 +1795,20 @@ export const FOODS: Food[] = [
     "carbs": 1.1,
     "fat": 4.2,
     "source": "Philadelphia Light ~1,020 kJ/100 g; Extra Light is ~553 if that is the tub"
+  },
+  {
+    "id": "pizza-sauce-70-ml",
+    "name": "Pizza sauce, 70 ml",
+    "category": "staple",
+    "servingLabel": "70 ml (~73 g)",
+    "kj": 190,
+    "confidence": "high",
+    "brand": "Woolworths",
+    "servingGrams": 73,
+    "protein": 2.3,
+    "carbs": 6.7,
+    "fat": 0.6,
+    "source": "Woolworths Pizza Sauce panel, photographed: 260 kJ/100 g"
   },
   {
     "id": "potato-boiled",

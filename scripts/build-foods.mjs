@@ -1428,6 +1428,60 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: 'Pizza sauce, 70 ml',
+    brand: 'Woolworths',
+    category: 'staple',
+    servingLabel: '70 ml (~73 g)',
+    /*
+     * Off the bottle: 260 kJ per 100 g, 3.2 g protein, 0.8 g fat, 9.2 g carbohydrate
+     * (8.3 g sugars), 467 mg sodium. Ingredients are 98% tomato, so the sugars are the
+     * tomatoes' own rather than added.
+     *
+     * 70 ml taken as ~73 g at a density of 1.04, which is where a tomato-paste sauce
+     * sits. Treating it as a flat 70 g instead would give 182 rather than 190 — an
+     * 8 kJ question, recorded only so the conversion is not silently assumed.
+     *
+     * Sodium is the line worth a glance rather than the energy: ~341 mg in this much,
+     * which is real salt for something that reads as free.
+     */
+    kj: 190,
+    servingGrams: 73,
+    protein: 2.3,
+    carbs: 6.7,
+    fat: 0.6,
+    source: 'Woolworths Pizza Sauce panel, photographed: 260 kJ/100 g',
+    confidence: 'high',
+  },
+  {
+    name: 'Perfect Melt grated cheese, 75 g',
+    brand: 'Perfect Italiano',
+    category: 'protein',
+    servingLabel: '75 g (3 × 25 g pack serves)',
+    /*
+     * Off the pack: 1,370 kJ per 100 g, 26.0 g protein, 25.0 g fat (15.9 saturated),
+     * under 1 g carbohydrate, 637 mg sodium. Mozzarella, cheddar and Romano blend.
+     *
+     * 75 g IS THREE OF THE PACK'S OWN 25 g SERVES AND HALF THE BAG — the pack declares
+     * six. Worth stating plainly because grated cheese is the easiest thing in a
+     * kitchen to under-count: it goes on by the handful, and a handful is closer to
+     * 40 g than 25.
+     *
+     * With the pizza sauce this pair is 1,218 kJ, and the cheese is 84% of it. Sauce
+     * and cheese feel like the same class of thing — the stuff that goes on before the
+     * toppings — and they are a factor of five apart.
+     *
+     * At 53 kJ per gram of protein the cheese is not actually a bad protein source; it
+     * is just extremely dense, so the quantity is what decides whether it helps.
+     */
+    kj: 1028,
+    servingGrams: 75,
+    protein: 19.5,
+    carbs: 0.7,
+    fat: 18.8,
+    source: 'Perfect Italiano Perfect Melt panel, photographed: 1,370 kJ/100 g',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
