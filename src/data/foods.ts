@@ -935,6 +935,19 @@ export const FOODS: Food[] = [
     "source": "estimate — ~680 kJ/100 g, sits between calcount 'rice cooked with oil added' and takeaway egg fried rice entries"
   },
   {
+    "id": "eggs-benedict-homemade",
+    "name": "Eggs Benedict, homemade",
+    "category": "homecooked",
+    "servingLabel": "2 eggs, 2 sourdough, 6 lean bacon, 1 tbsp hollandaise",
+    "kj": 2670,
+    "confidence": "medium",
+    "servingGrams": 314,
+    "protein": 46,
+    "carbs": 45,
+    "fat": 29,
+    "source": "Built from your stated components; sourdough at ~1,060 kJ/100 g"
+  },
+  {
     "id": "lamb-curry-with-rice-home-cooked",
     "name": "Lamb curry with rice (home-cooked)",
     "category": "homecooked",

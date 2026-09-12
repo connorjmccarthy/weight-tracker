@@ -404,7 +404,12 @@ const EXTRA = [
      *
      * The bread is the biggest line and the least obvious one: focaccia runs ~1,255 kJ
      * per 100 g because it is bread with a great deal of olive oil worked through it —
-     * roughly 40% more than the same weight of sourdough.
+     * roughly 20% more than the same weight of sourdough, which is ~1,060.
+     *
+     * (That comparison originally said 40%, which implied sourdough at ~900 kJ/100 g
+     * and is too low — white sourdough is 1,046-1,130. The focaccia figure itself was
+     * taken from panels directly and was never affected, but the aside would have
+     * misled the next estimate that leaned on it, which is what these notes are for.)
      *
      * Filed WITHOUT the chips that came alongside, which are their own row, because
      * whether to eat them is a real decision worth seeing separately.
@@ -1386,6 +1391,40 @@ const EXTRA = [
     carbs: 6.7,
     fat: 5.7,
     source: 'FatSecret AU 3- and 6-piece panels (agree per piece); fat/carb split inferred',
+    confidence: 'medium',
+  },
+  {
+    name: 'Eggs Benedict, homemade',
+    category: 'homecooked',
+    servingLabel: '2 eggs, 2 sourdough, 6 lean bacon, 1 tbsp hollandaise',
+    /*
+     * As specified: 2 poached eggs (630), 1 tablespoon of hollandaise (370), 2 slices
+     * of sourdough at ~45 g each (950), 6 pieces of bacon with the fat off (700),
+     * rocket (20).
+     *
+     * TWO DECISIONS HERE ARE WORTH MORE THAN THE WHOLE ROW'S UNCERTAINTY.
+     *
+     * Trimming the bacon fat: six full-fat rashers come to ~105 g cooked at ~1,650 kJ
+     * per 100 g, or 1,730. Trimmed to the lean eye it is ~85 g at ~800, or 700. That is
+     * 1,030 kJ removed for almost no protein, because the strip cut off is nearly all
+     * fat. It is the largest single saving anyone has made to a dish in this database.
+     *
+     * One tablespoon of hollandaise: 15 g at ~2,470 kJ per 100 g is 370. A cafe pours
+     * 60-70 g — the poached-eggs plate already here carries 1,740 of it. Measuring the
+     * sauce instead of pouring it is worth ~1,370 on the same breakfast.
+     *
+     * Between them those two choices are ~2,400 kJ, which is most of another meal. The
+     * cafe version of this exact plate lands near 5,000; this one is 2,670.
+     *
+     * The sourdough is now the biggest line at 950 — more than the bacon, more than the
+     * eggs. Density 850 kJ per 100 g across 314 g, right for a bread-and-egg plate.
+     */
+    kj: 2670,
+    servingGrams: 314,
+    protein: 46,
+    carbs: 45,
+    fat: 29,
+    source: 'Built from your stated components; sourdough at ~1,060 kJ/100 g',
     confidence: 'medium',
   },
   {
