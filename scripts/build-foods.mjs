@@ -1544,6 +1544,43 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: "Grill'd Protein Pro",
+    brand: "Grill'd",
+    category: 'fastfood',
+    servingLabel: '1 burger, traditional bun',
+    /*
+     * Double grilled chicken breast, bacon, tasty cheese, cos, tomato, Spanish onion,
+     * avocado, relish, herbed mayo. From Grill'd High Performance range.
+     *
+     * 81 g PROTEIN IS WELL CORROBORATED — it is the number Grill'd markets the burger
+     * on, repeated across their own posts and the trade coverage. A component build-up
+     * agrees closely: double breast ~58 g, bacon 6, cheese 5, bun 8.
+     *
+     * THE ENERGY IS NOT AS SOLID AND THE ROW SAYS SO. 2,970 kJ (710 Cal), 44 g
+     * carbohydrate, 26.9 g fat comes from a single aggregator; Grill'd's own nutrition
+     * page could not be reached from here to confirm it. Building the burger from parts
+     * lands nearer 3,900, about 30% higher, and the same gap shows in the fat — 37 g
+     * modelled against 26.9 stated. Either their mayo and avocado are lighter than
+     * assumed, or the aggregator is low.
+     *
+     * THE DISCREPANCY DOES NOT CHANGE THE ANSWER, which is why it is filed rather than
+     * chased. At the stated 2,970 it is 37 kJ per gram of protein; at the pessimistic
+     * 3,900 it is 48. Either figure makes it the best orderable meal in this database —
+     * 37 would put it near plain chicken breast (23) and ahead of a baked schnitzel
+     * (35); 48 merely ties the Greenstreat burrito. Confidence is medium on that basis.
+     *
+     * The comparison that matters: the Simply Grill'd already here is 2,510 kJ for
+     * 29.2 g protein, 86 kJ per gram. Swapping to this is +460 kJ for +52 g of protein
+     * — more than a third of a day's target, for less than a Bunnings snag.
+     */
+    kj: 2970,
+    protein: 81,
+    carbs: 44,
+    fat: 26.9,
+    source: "MyNetDiary listing (710 Cal); protein corroborated by Grill'd's own marketing",
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

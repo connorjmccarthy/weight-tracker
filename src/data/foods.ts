@@ -256,6 +256,19 @@ export const FOODS: Food[] = [
     "source": "estimate. No Grill'd-specific salad data was retrievable; searches returned only generic and US-chain salads. LOW TRUST."
   },
   {
+    "id": "grilld-protein-pro",
+    "name": "Grill'd Protein Pro",
+    "category": "fastfood",
+    "servingLabel": "1 burger, traditional bun",
+    "kj": 2970,
+    "confidence": "medium",
+    "brand": "Grill'd",
+    "protein": 81,
+    "carbs": 44,
+    "fat": 26.9,
+    "source": "MyNetDiary listing (710 Cal); protein corroborated by Grill'd's own marketing"
+  },
+  {
     "id": "kfc-10-boxfull",
     "name": "KFC $10 Boxfull",
     "category": "fastfood",
