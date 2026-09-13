@@ -260,13 +260,13 @@ export const FOODS: Food[] = [
     "name": "Grill'd Protein Pro",
     "category": "fastfood",
     "servingLabel": "1 burger, traditional bun",
-    "kj": 2970,
-    "confidence": "medium",
+    "kj": 3010,
+    "confidence": "high",
     "brand": "Grill'd",
     "protein": 81,
     "carbs": 44,
     "fat": 26.9,
-    "source": "MyNetDiary listing (710 Cal); protein corroborated by Grill'd's own marketing"
+    "source": "Grill'd: 3,010 kJ and 81 g protein; carb and fat split from MyNetDiary"
   },
   {
     "id": "kfc-10-boxfull",
