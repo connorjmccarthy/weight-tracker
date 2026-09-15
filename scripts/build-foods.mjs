@@ -1634,6 +1634,43 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'GYG Brekkie Burrito, bacon (mild)',
+    brand: 'Guzman y Gomez',
+    category: 'fastfood',
+    servingLabel: '1 regular burrito (240 g) — not the Big',
+    /*
+     * ENERGY IS WELL SOURCED: 587 Cal for a 240 g serve, listed identically by
+     * FatSecret AU and CalorieKing AU. That is 2,460 kJ.
+     *
+     * PROTEIN IS INFERRED, AND THE INFERENCE IS A GOOD ONE. The Big Brekkie Burrito is
+     * published at 405 g, 4,060 kJ and 41.1 g protein. Its energy density is
+     * 1,002 kJ/100 g against this one's 1,023 — 2% apart, which says the two are the
+     * same recipe at different sizes rather than different builds. Scaling by weight
+     * gives 24.4 g, scaling by energy gives 24.9; both land at ~24.5.
+     *
+     * Carbohydrate and fat are modelled from the energy balance and are the softest
+     * numbers here. Confidence medium on that basis. GYG's own pages and both
+     * aggregators' detail views were unreachable from this network.
+     *
+     * THE SURPRISE IS THAT THIS IS A POOR PROTEIN DEAL. 101 kJ per gram — near the KFC
+     * $10 Boxfull at 107, and more than double the Greenstreat chicken caesar burrito
+     * at 48. A burrito full of egg, potato, cheese and tortilla is a different animal
+     * from one full of chicken, whatever the shape suggests.
+     *
+     * Going Big does not fix it: the Big is 99 kJ per gram, the same ratio scaled up.
+     *
+     * Against the Bacon & Egg McMuffin already here — 1,230 kJ for 18 g, 68 kJ per
+     * gram — the McMuffin is both the smaller breakfast AND the better protein buy.
+     */
+    kj: 2460,
+    servingGrams: 240,
+    protein: 24.4,
+    carbs: 56,
+    fat: 28,
+    source: 'FatSecret AU / CalorieKing AU (587 Cal, 240 g); protein scaled from the Big',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

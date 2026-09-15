@@ -269,6 +269,20 @@ export const FOODS: Food[] = [
     "source": "Grill'd: 3,010 kJ and 81 g protein; carb and fat split from MyNetDiary"
   },
   {
+    "id": "gyg-brekkie-burrito-bacon-mild",
+    "name": "GYG Brekkie Burrito, bacon (mild)",
+    "category": "fastfood",
+    "servingLabel": "1 regular burrito (240 g) — not the Big",
+    "kj": 2460,
+    "confidence": "medium",
+    "brand": "Guzman y Gomez",
+    "servingGrams": 240,
+    "protein": 24.4,
+    "carbs": 56,
+    "fat": 28,
+    "source": "FatSecret AU / CalorieKing AU (587 Cal, 240 g); protein scaled from the Big"
+  },
+  {
     "id": "kfc-10-boxfull",
     "name": "KFC $10 Boxfull",
     "category": "fastfood",
