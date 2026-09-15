@@ -1065,6 +1065,19 @@ export const FOODS: Food[] = [
     "source": "calcount AU \"Shepherd's pie, homemade\" 107 kcal/100 g = 448 kJ/100 g — low vs other dishes because it is potato/vegetable heavy; portion assumed"
   },
   {
+    "id": "spag-bol-484-g-bowl",
+    "name": "Spag bol, 484 g bowl",
+    "category": "homecooked",
+    "servingLabel": "484 g weighed — pasta and sauce, bread separate",
+    "kj": 3150,
+    "confidence": "medium",
+    "servingGrams": 484,
+    "protein": 34,
+    "carbs": 88,
+    "fat": 27,
+    "source": "Weighed at 484 g; midpoint of a component build-up and the generic row"
+  },
+  {
     "id": "spaghetti-bolognese-home-cooked",
     "name": "Spaghetti bolognese (home-cooked)",
     "category": "homecooked",
@@ -1629,6 +1642,19 @@ export const FOODS: Food[] = [
     "carbs": 22,
     "fat": 2.2,
     "source": "Standard steamed bao dough at ~1,100 kJ/100 g"
+  },
+  {
+    "id": "bread-roll-piece",
+    "name": "Bread roll, piece",
+    "category": "staple",
+    "servingLabel": "1 piece (~60 g) — a third of a long roll",
+    "kj": 650,
+    "confidence": "low",
+    "servingGrams": 60,
+    "protein": 5.2,
+    "carbs": 31,
+    "fat": 2.2,
+    "source": "Plain white bread roll at ~1,100 kJ/100 g"
   },
   {
     "id": "brown-rice-cooked",

@@ -1580,6 +1580,60 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Spag bol, 484 g bowl',
+    category: 'homecooked',
+    servingLabel: '484 g weighed — pasta and sauce, bread separate',
+    /*
+     * WEIGHED AT 484 g. Built as ~250 g cooked fettuccine (from ~110 g dry, 1,634) and
+     * ~234 g of sauce — beef mince 110 g raw (979), soffritto (90), tomato (150), the
+     * oil it was started in (370).
+     *
+     * TWO INDEPENDENT ESTIMATES, AVERAGED. The component build-up gives 3,223. The
+     * generic home spaghetti bolognese row already in this database is 635 kJ/100 g,
+     * which across 484 g gives 3,073. They are 5% apart, so this is filed at the
+     * midpoint rather than picking a favourite: ~3,150, or 651 kJ/100 g.
+     *
+     * THE CHECK AGAINST THE PAPPARDELLE ROW IS THE INTERESTING ONE. That bowl was filed
+     * at 3,600 for 485 g — one gram different in weight, 450 kJ different in energy,
+     * 742 kJ/100 g against 651. That looks like one of them must be wrong, and neither
+     * is: the pappardelle was built with 15 g of parmesan (250) and 12 g of oil where
+     * this has 10 g and no visible cheese. 324 kJ of the 450 gap is accounted for by
+     * exactly the two ingredients that differ. Two pasta bowls of identical weight can
+     * legitimately sit 450 kJ apart, and the cheese is most of it.
+     *
+     * The bread roll on top is its own row. Whether the 484 g included it is not
+     * knowable from the photo — if it was on the bowl when it went on the scale, take
+     * ~650 off this figure rather than adding the bread separately.
+     */
+    kj: 3150,
+    servingGrams: 484,
+    protein: 34,
+    carbs: 88,
+    fat: 27,
+    source: 'Weighed at 484 g; midpoint of a component build-up and the generic row',
+    confidence: 'medium',
+  },
+  {
+    name: 'Bread roll, piece',
+    category: 'staple',
+    servingLabel: '1 piece (~60 g) — a third of a long roll',
+    /*
+     * Plain white roll at ~1,100 kJ per 100 g. Filed per piece rather than per roll
+     * because it arrives as a piece torn off one.
+     *
+     * Worth its own row because it is the quiet addition to a plate that is already
+     * complete — 650 kJ on top of a 3,150 kJ bowl of pasta is a fifth more dinner for
+     * something that reads as a side. The same note already sits on the gnocchi row.
+     */
+    kj: 650,
+    servingGrams: 60,
+    protein: 5.2,
+    carbs: 31,
+    fat: 2.2,
+    source: 'Plain white bread roll at ~1,100 kJ/100 g',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
