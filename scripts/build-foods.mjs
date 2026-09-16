@@ -1637,7 +1637,7 @@ const EXTRA = [
     name: 'GYG Brekkie Burrito, bacon (mild)',
     brand: 'Guzman y Gomez',
     category: 'fastfood',
-    servingLabel: '1 regular burrito (240 g) — not the Big',
+    servingLabel: '1 regular burrito, no hash brown (~190 g)',
     /*
      * ENERGY IS WELL SOURCED: 587 Cal for a 240 g serve, listed identically by
      * FatSecret AU and CalorieKing AU. That is 2,460 kJ.
@@ -1652,21 +1652,33 @@ const EXTRA = [
      * numbers here. Confidence medium on that basis. GYG's own pages and both
      * aggregators' detail views were unreachable from this network.
      *
-     * THE SURPRISE IS THAT THIS IS A POOR PROTEIN DEAL. 101 kJ per gram — near the KFC
-     * $10 Boxfull at 107, and more than double the Greenstreat chicken caesar burrito
-     * at 48. A burrito full of egg, potato, cheese and tortilla is a different animal
-     * from one full of chicken, whatever the shape suggests.
+     * NO HASH BROWN — that is how he orders it. The full 240 g burrito is 2,460; the
+     * hash brown is ~50 g and ~550 kJ, leaving 1,910 across ~190 g.
      *
-     * Going Big does not fix it: the Big is 99 kJ per gram, the same ratio scaled up.
+     * A CORRECTION TO THE SPLIT THAT PRODUCED THAT NUMBER. An earlier apportionment of
+     * the 2,460 put the potato at ~250 kJ, treating it as diced breakfast potato. It is
+     * a hash brown — a formed, fried patty, ~50 g at ~1,100 kJ/100 g, so ~550. For
+     * scale, a McDonald's hash brown is 53 g and 620 kJ. The understatement was more
+     * than a McMuffin's worth of difference on a single component.
      *
-     * Against the Bacon & Egg McMuffin already here — 1,230 kJ for 18 g, 68 kJ per
-     * gram — the McMuffin is both the smaller breakfast AND the better protein buy.
+     * The lesson is narrow and worth keeping: reverse-engineering a known total across
+     * components is safer than building one up from scratch, because the total anchors
+     * it — but it still fails if a component is MISIDENTIFIED rather than mis-sized.
+     * "Potato" and "hash brown" are not the same ingredient and are 300 kJ apart here.
+     *
+     * STILL NOT A GOOD PROTEIN DEAL, just a better one: 82 kJ per gram without the hash
+     * brown, against 101 with it. The Bacon & Egg McMuffin already here is 68, so the
+     * McMuffin remains the better buy on that measure.
+     *
+     * THE TORTILLA IS STILL 950 kJ AND HALF OF WHAT IS LEFT. Ordered as a bowl this
+     * drops to ~960 kJ for the same 23.4 g of protein — 41 kJ per gram, which would
+     * make it one of the best breakfasts in this database rather than one of the worst.
      */
-    kj: 2460,
-    servingGrams: 240,
-    protein: 24.4,
-    carbs: 56,
-    fat: 28,
+    kj: 1910,
+    servingGrams: 190,
+    protein: 23.4,
+    carbs: 40,
+    fat: 21,
     source: 'FatSecret AU / CalorieKing AU (587 Cal, 240 g); protein scaled from the Big',
     confidence: 'medium',
   },
