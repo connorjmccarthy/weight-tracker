@@ -1637,7 +1637,7 @@ const EXTRA = [
     name: 'GYG Brekkie Burrito, bacon (mild)',
     brand: 'Guzman y Gomez',
     category: 'fastfood',
-    servingLabel: '1 regular burrito, no hash brown (~190 g)',
+    servingLabel: '1 regular burrito, no hash brown (~177 g)',
     /*
      * ENERGY IS WELL SOURCED: 587 Cal for a 240 g serve, listed identically by
      * FatSecret AU and CalorieKing AU. That is 2,460 kJ.
@@ -1652,34 +1652,40 @@ const EXTRA = [
      * numbers here. Confidence medium on that basis. GYG's own pages and both
      * aggregators' detail views were unreachable from this network.
      *
-     * NO HASH BROWN — that is how he orders it. The full 240 g burrito is 2,460; the
-     * hash brown is ~50 g and ~550 kJ, leaving 1,910 across ~190 g.
+     * NO HASH BROWN — that is how he orders it. GYG publishes the hash brown at 722 kJ,
+     * so 2,460 less 722 leaves 1,738 across ~177 g.
      *
-     * A CORRECTION TO THE SPLIT THAT PRODUCED THAT NUMBER. An earlier apportionment of
-     * the 2,460 put the potato at ~250 kJ, treating it as diced breakfast potato. It is
-     * a hash brown — a formed, fried patty, ~50 g at ~1,100 kJ/100 g, so ~550. For
-     * scale, a McDonald's hash brown is 53 g and 620 kJ. The understatement was more
-     * than a McMuffin's worth of difference on a single component.
+     * THIS COMPONENT WAS ESTIMATED TWICE AND WAS LOW BOTH TIMES. First at ~250, reading
+     * it as diced breakfast potato; corrected to ~550 on realising it is a formed fried
+     * patty; actually 722. Each revision moved the right way and stopped short. The
+     * failure was not arithmetic, it was anchoring — the second estimate was built by
+     * adjusting the first rather than by pricing the item from scratch, and inherited
+     * most of its error. An independent re-estimate would have done better than a
+     * correction.
      *
-     * The lesson is narrow and worth keeping: reverse-engineering a known total across
-     * components is safer than building one up from scratch, because the total anchors
-     * it — but it still fails if a component is MISIDENTIFIED rather than mis-sized.
-     * "Potato" and "hash brown" are not the same ingredient and are 300 kJ apart here.
+     * THE REST OF THE SPLIT IS NOW ADMITTED AS SOFT. With the hash brown at 722 and a
+     * burrito tortilla near 800-950, those two alone are ~1,520-1,670 of the 2,460,
+     * leaving only ~800-950 for the egg, bacon, cheese and salsa — which a build-up
+     * puts nearer 950. The apportionment does not quite close, so the component figures
+     * beyond the hash brown should be treated as indicative, not as data.
      *
-     * STILL NOT A GOOD PROTEIN DEAL, just a better one: 82 kJ per gram without the hash
-     * brown, against 101 with it. The Bacon & Egg McMuffin already here is 68, so the
-     * McMuffin remains the better buy on that measure.
+     * The SUBTRACTION is sound regardless, because it uses GYG's own figure against an
+     * aggregator total for the same product. Mixing the two sources is the one soft
+     * spot and it is worth ~100 kJ at most.
      *
-     * THE TORTILLA IS STILL 950 kJ AND HALF OF WHAT IS LEFT. Ordered as a bowl this
-     * drops to ~960 kJ for the same 23.4 g of protein — 41 kJ per gram, which would
-     * make it one of the best breakfasts in this database rather than one of the worst.
+     * 75 kJ per gram of protein without the hash brown, against 101 with it. The Bacon
+     * & Egg McMuffin already here is 68, so the McMuffin is still marginally better.
+     *
+     * AS A BOWL, losing the tortilla too, this lands near 800-950 kJ for the same 23 g
+     * of protein — roughly 34-41 kJ per gram, which would beat every breakfast here and
+     * rival the Protein Pro at 37.
      */
-    kj: 1910,
-    servingGrams: 190,
-    protein: 23.4,
-    carbs: 40,
-    fat: 21,
-    source: 'FatSecret AU / CalorieKing AU (587 Cal, 240 g); protein scaled from the Big',
+    kj: 1738,
+    servingGrams: 177,
+    protein: 23.1,
+    carbs: 35,
+    fat: 19,
+    source: "FatSecret AU / CalorieKing AU (587 Cal, 240 g) less GYG's 722 kJ hash brown",
     confidence: 'medium',
   },
   {

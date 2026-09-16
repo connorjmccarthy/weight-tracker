@@ -272,15 +272,15 @@ export const FOODS: Food[] = [
     "id": "gyg-brekkie-burrito-bacon-mild",
     "name": "GYG Brekkie Burrito, bacon (mild)",
     "category": "fastfood",
-    "servingLabel": "1 regular burrito, no hash brown (~190 g)",
-    "kj": 1910,
+    "servingLabel": "1 regular burrito, no hash brown (~177 g)",
+    "kj": 1738,
     "confidence": "medium",
     "brand": "Guzman y Gomez",
-    "servingGrams": 190,
-    "protein": 23.4,
-    "carbs": 40,
-    "fat": 21,
-    "source": "FatSecret AU / CalorieKing AU (587 Cal, 240 g); protein scaled from the Big"
+    "servingGrams": 177,
+    "protein": 23.1,
+    "carbs": 35,
+    "fat": 19,
+    "source": "FatSecret AU / CalorieKing AU (587 Cal, 240 g) less GYG's 722 kJ hash brown"
   },
   {
     "id": "kfc-10-boxfull",
