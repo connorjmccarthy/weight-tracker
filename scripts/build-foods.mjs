@@ -1655,30 +1655,35 @@ const EXTRA = [
      * NO HASH BROWN — that is how he orders it. GYG publishes the hash brown at 722 kJ,
      * so 2,460 less 722 leaves 1,738 across ~177 g.
      *
-     * THIS COMPONENT WAS ESTIMATED TWICE AND WAS LOW BOTH TIMES. First at ~250, reading
-     * it as diced breakfast potato; corrected to ~550 on realising it is a formed fried
-     * patty; actually 722. Each revision moved the right way and stopped short. The
-     * failure was not arithmetic, it was anchoring — the second estimate was built by
-     * adjusting the first rather than by pricing the item from scratch, and inherited
-     * most of its error. An independent re-estimate would have done better than a
-     * correction.
+     * GYG'S OWN APP LISTS THE REMOVABLE COMPONENTS, and they close the total:
      *
-     * THE REST OF THE SPLIT IS NOW ADMITTED AS SOFT. With the hash brown at 722 and a
-     * burrito tortilla near 800-950, those two alone are ~1,520-1,670 of the 2,460,
-     * leaving only ~800-950 for the egg, bacon, cheese and salsa — which a build-up
-     * puts nearer 950. The apportionment does not quite close, so the component figures
-     * beyond the hash brown should be treated as indicative, not as data.
+     *   hash brown      722        tortilla (not removable)   ~700
+     *   scrambled eggs  353        bacon (not removable)      ~300
+     *   cheese          336        mild salsa                  ~35
+     *   pico de gallo    14        -----------------------------
+     *                              2,460 total
      *
-     * The SUBTRACTION is sound regardless, because it uses GYG's own figure against an
-     * aggregator total for the same product. Mixing the two sources is the one soft
-     * spot and it is worth ~100 kJ at most.
+     * My estimates of those four were 250 / 300 / 200 / 50 against 722 / 353 / 336 / 14
+     * — low on every substantial item and high on the trivial one. The pattern across
+     * this whole database holds again: dense components get underestimated and garnishes
+     * get overestimated.
+     *
+     * A SEPARATE CORRECTION: the tortilla was earlier put at 800-950 by picturing a
+     * burrito-sized wrap. A REGULAR brekkie burrito is a 10 inch, not the Big's 12, and
+     * once the listed components are subtracted only ~700 is left for it. So a bowl
+     * saves ~700, not ~950.
      *
      * 75 kJ per gram of protein without the hash brown, against 101 with it. The Bacon
      * & Egg McMuffin already here is 68, so the McMuffin is still marginally better.
+     * As a bowl it would be ~1,040 for the same 23 g, or 45 kJ per gram.
      *
-     * AS A BOWL, losing the tortilla too, this lands near 800-950 kJ for the same 23 g
-     * of protein — roughly 34-41 kJ per gram, which would beat every breakfast here and
-     * rival the Protein Pro at 37.
+     * WHAT NOT TO REMOVE, WHICH THE COMPONENT LIST MAKES CALCULABLE FOR THE FIRST TIME.
+     * The hash brown is 722 kJ for ~1 g of protein — about 722 kJ per gram, the worst
+     * ratio of anything in this database, which is why removing it is pure gain. The
+     * cheese is 336 kJ for ~6.5 g, or 52 kJ per gram, BETTER than the burrito's own 75.
+     * Removing it would take the meal to 1,402 kJ and 16.6 g, which is 84 kJ per gram —
+     * a WORSE deal than leaving it in. Smaller is not the same as better, and this is
+     * the cleanest example of the difference anywhere in these notes.
      */
     kj: 1738,
     servingGrams: 177,
