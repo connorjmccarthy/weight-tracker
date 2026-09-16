@@ -278,8 +278,8 @@ export const FOODS: Food[] = [
     "brand": "Guzman y Gomez",
     "servingGrams": 177,
     "protein": 23.1,
-    "carbs": 35,
-    "fat": 19,
+    "carbs": 32,
+    "fat": 20,
     "source": "FatSecret AU / CalorieKing AU (587 Cal, 240 g) less GYG's 722 kJ hash brown"
   },
   {

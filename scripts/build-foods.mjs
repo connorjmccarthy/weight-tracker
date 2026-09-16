@@ -1642,15 +1642,16 @@ const EXTRA = [
      * ENERGY IS WELL SOURCED: 587 Cal for a 240 g serve, listed identically by
      * FatSecret AU and CalorieKing AU. That is 2,460 kJ.
      *
-     * PROTEIN IS INFERRED, AND THE INFERENCE IS A GOOD ONE. The Big Brekkie Burrito is
-     * published at 405 g, 4,060 kJ and 41.1 g protein. Its energy density is
-     * 1,002 kJ/100 g against this one's 1,023 — 2% apart, which says the two are the
-     * same recipe at different sizes rather than different builds. Scaling by weight
-     * gives 24.4 g, scaling by energy gives 24.9; both land at ~24.5.
+     * PROTEIN IS INFERRED TWICE OVER AND THE TWO AGREE. The Big Brekkie Burrito is
+     * published at 405 g, 4,060 kJ and 41.1 g protein, at an energy density within 2%
+     * of this one — same recipe, different size — which scales to ~24.5 g for the full
+     * burrito, or 23.1 without the hash brown. Building up from GYG's own component
+     * list instead gives 23.5. Two independent routes landing within 2% is the reason
+     * this number is trusted despite never being published directly.
      *
-     * Carbohydrate and fat are modelled from the energy balance and are the softest
-     * numbers here. Confidence medium on that basis. GYG's own pages and both
-     * aggregators' detail views were unreachable from this network.
+     * Carbohydrate and fat are derived from that same component build-up rather than
+     * from a bare energy balance. They remain the softest figures in the row, which is
+     * what holds confidence at medium.
      *
      * NO HASH BROWN — that is how he orders it. GYG publishes the hash brown at 722 kJ,
      * so 2,460 less 722 leaves 1,738 across ~177 g.
@@ -1688,8 +1689,8 @@ const EXTRA = [
     kj: 1738,
     servingGrams: 177,
     protein: 23.1,
-    carbs: 35,
-    fat: 19,
+    carbs: 32,
+    fat: 20,
     source: "FatSecret AU / CalorieKing AU (587 Cal, 240 g) less GYG's 722 kJ hash brown",
     confidence: 'medium',
   },
