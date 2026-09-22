@@ -851,6 +851,19 @@ export const FOODS: Food[] = [
     "source": "Weighed at 315 g; component split modelled"
   },
   {
+    "id": "chicken-parmi-air-fried",
+    "name": "Chicken parmi, air fried",
+    "category": "homecooked",
+    "servingLabel": "1 parmi — log 2 for two",
+    "kj": 1680,
+    "confidence": "medium",
+    "servingGrams": 215,
+    "protein": 40,
+    "carbs": 24,
+    "fat": 18,
+    "source": "Built on the weighed schnitzel base; cheese from the photographed panel"
+  },
+  {
     "id": "chicken-schnitzel-crumbed-oven-baked",
     "name": "Chicken schnitzel, crumbed (oven-baked)",
     "category": "homecooked",
@@ -1914,6 +1927,19 @@ export const FOODS: Food[] = [
     "carbs": 22,
     "fat": 0.9,
     "source": "estimate — ~1090 kJ/100 g; bakery sourdough slices are denser and larger than sandwich bread, so slice weight drives this more than the per-100 g figure"
+  },
+  {
+    "id": "spud-lite-chips-deep-fried",
+    "name": "Spud Lite chips, deep fried",
+    "category": "staple",
+    "servingLabel": "from ~200 g raw potato (~150 g cooked)",
+    "kj": 1160,
+    "confidence": "low",
+    "servingGrams": 150,
+    "protein": 2,
+    "carbs": 17.8,
+    "fat": 20,
+    "source": "Spud Lite published panel plus ~10% oil uptake on thick-cut chips"
   },
   {
     "id": "queen-sugar-free-maple-flavoured-syrup",

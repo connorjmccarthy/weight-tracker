@@ -1695,6 +1695,64 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: 'Chicken parmi, air fried',
+    category: 'homecooked',
+    servingLabel: '1 parmi — log 2 for two',
+    /*
+     * Crumbed cutlet air fried, then napoli, cheese and bacon under the grill. Built on
+     * the WEIGHED schnitzel already here: air frying and oven baking both add only a
+     * spray, so the cutlet base is that row's 910 rather than the 1,320 a pan costs.
+     * Then napoli 40 g (90), cheese ~35 g at the photographed Perfect Melt panel (480),
+     * bacon ~12 g (200).
+     *
+     * AIR FRYING IS WORTH ~410 kJ PER CUTLET against the pan, and ~830 against a deep
+     * fryer. Two parmis done this way rather than fried is ~820 saved before anything
+     * else on the plate is decided. It is the same lever as the baked schnitzel and it
+     * is the biggest one available on a crumbed dish.
+     *
+     * For scale: the RSL parmy row is 2,800 for a larger deep-fried cutlet. Take its
+     * 740 kJ of fryer oil out and it lands near 2,060, which is where a bigger version
+     * of this would sit.
+     */
+    kj: 1680,
+    servingGrams: 215,
+    protein: 40,
+    carbs: 24,
+    fat: 18,
+    source: 'Built on the weighed schnitzel base; cheese from the photographed panel',
+    confidence: 'medium',
+  },
+  {
+    name: 'Spud Lite chips, deep fried',
+    category: 'staple',
+    servingLabel: 'from ~200 g raw potato (~150 g cooked)',
+    /*
+     * 200 g of raw Spud Lite is 418 kJ off its published panel. Thick hand-cut chips
+     * take up roughly 10% of their finished weight in oil, so ~20 g, or 740 kJ. Total
+     * ~1,160 for ~150 g of chips.
+     *
+     * THE OIL IS THREE TIMES WHAT THE LOW-CARB POTATO SAVED, and that is the whole
+     * point of this row. 200 g of ordinary potato is 660 kJ against Spud Lite's 418 —
+     * a 242 kJ saving for buying the special potato. Deep frying it then added 740. The
+     * fryer gave back three times what the shopping decision earned, and it did it in
+     * four minutes.
+     *
+     * Air fried instead, the same 200 g would be ~450 kJ. Choosing the pan is worth
+     * more than choosing the potato, by a factor of three, in the opposite direction.
+     *
+     * Range 1,000-1,500 depending on uptake. Thick chips absorb ~8-12% of their
+     * finished weight; shoestring runs to 18%, which is why the thin ones are worse
+     * despite being the same potato.
+     */
+    kj: 1160,
+    servingGrams: 150,
+    protein: 2,
+    carbs: 17.8,
+    fat: 20,
+    source: 'Spud Lite published panel plus ~10% oil uptake on thick-cut chips',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',
