@@ -1753,6 +1753,41 @@ const EXTRA = [
     confidence: 'low',
   },
   {
+    name: 'Muscle Nation protein ice cream, Double Chocolate',
+    brand: 'Muscle Nation',
+    category: 'dessert',
+    servingLabel: '1 serve — a third of the 475 ml tub (~100 g)',
+    /*
+     * 164 Cal (686 kJ) per serve with 9 g protein, 14 g carbohydrate, 5.5 g fat. The
+     * tub declares three serves and 26 g protein; 3 x 9 = 27, so the per-serve figures
+     * and the brand's tub claim agree.
+     *
+     * Macros reconcile to 595 against 686, 13% under. That is the fibre and polyols
+     * these products are built on, the same gap the Musashi bar shows, and it is why
+     * the reconciliation gate allows 20%.
+     *
+     * THE WHOLE TUB IS 2,058 kJ. Filed per serve because that is the pack's own unit,
+     * but a 475 ml tub of ice cream is a thing people finish — log 3 if it went.
+     *
+     * GOOD DESSERT, POOR PROTEIN. At 76 kJ per gram of protein this is not a protein
+     * source: the Musashi bar is 49, Greek yoghurt 25, and even the karaage is 71.
+     * Nobody should eat this to hit 150 g.
+     *
+     * As a DESSERT it is genuinely well chosen, which is the fairer comparison. 686 kJ
+     * per 100 g against ~900-1,000 for regular premium ice cream, with two to three
+     * times the protein. Against the Massimo's gelato already in this database it is
+     * the better order by a wide margin. The right way to read this row is "ice cream
+     * that costs a quarter less", not "protein".
+     */
+    kj: 686,
+    servingGrams: 100,
+    protein: 9,
+    carbs: 14,
+    fat: 5.5,
+    source: 'FatSecret AU / MyNetDiary per serve; tub protein matches the brand claim',
+    confidence: 'medium',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

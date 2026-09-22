@@ -2270,6 +2270,20 @@ export const FOODS: Food[] = [
     "source": "AU milk chocolate (Cadbury Dairy Milk) ~2230 kJ/100 g; a Dairy Milk row of 4 is ~20 g"
   },
   {
+    "id": "muscle-nation-protein-ice-cream-double-chocolate",
+    "name": "Muscle Nation protein ice cream, Double Chocolate",
+    "category": "dessert",
+    "servingLabel": "1 serve — a third of the 475 ml tub (~100 g)",
+    "kj": 686,
+    "confidence": "medium",
+    "brand": "Muscle Nation",
+    "servingGrams": 100,
+    "protein": 9,
+    "carbs": 14,
+    "fat": 5.5,
+    "source": "FatSecret AU / MyNetDiary per serve; tub protein matches the brand claim"
+  },
+  {
     "id": "tim-tam-original-1-biscuit",
     "name": "Tim Tam Original, 1 biscuit",
     "category": "dessert",
