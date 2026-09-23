@@ -1788,6 +1788,46 @@ const EXTRA = [
     confidence: 'medium',
   },
   {
+    name: 'Slow Cooked Mexican Style Beef Brisket',
+    brand: 'Strength Meals Co',
+    category: 'protein',
+    servingLabel: '1 serve (250 g) — 2 per 500 g pack',
+    /*
+     * Panel as supplied: 1,660 kJ, 45.3 g protein, 19.7 g fat (7.6 saturated), 9.2 g
+     * carbohydrate (2.1 sugars), 0.7 g fibre, 936 mg sodium per 250 g serve. 665 kJ per
+     * 100 g. Two serves to the pack, so the whole 500 g is 3,320 kJ and 90.6 g protein.
+     *
+     * Macros reconcile to 1,655 against 1,660 — 0.3% out, one of the tightest panels in
+     * this database.
+     *
+     * 36.6 kJ PER GRAM OF PROTEIN, AND IT NEEDS NO COOKING. That figure ties the Grill'd
+     * Protein Pro (37) and beats the weighed baked schnitzel (45), which is remarkable
+     * for something reheated from a packet. Against every other ready-to-eat item here
+     * it is not close: the boxed pork shoulder is 53, Wicked Boneless 51, the Musashi
+     * bar 49, the Muscle Nation ice cream 76.
+     *
+     * Only raw ingredients beat it — chicken breast at 23, lean steak and extra-lean
+     * mince at 25 — and those are twenty minutes and a pan away. THE VALUE OF THIS ROW
+     * IS THAT IT REQUIRES NO DECISION AT 6PM, which across this database has been the
+     * point at which good days stop being good.
+     *
+     * For contrast, the catered brisket plate already here is 4,100 kJ for 52 g, or
+     * 79 kJ per gram. Same meat, less than half as efficient once rice and potato bake
+     * are on the plate beside it.
+     *
+     * SODIUM IS THE ONE LINE TO WATCH: 936 mg a serve, 1,872 for the pack, against an
+     * Australian adequate intake near 920 mg and an upper limit of 2,300. One serve is
+     * a day's worth. Worth knowing, not worth avoiding the food over.
+     */
+    kj: 1660,
+    servingGrams: 250,
+    protein: 45.3,
+    carbs: 9.2,
+    fat: 19.7,
+    source: 'Manufacturer panel as supplied; macros reconcile to 0.3%',
+    confidence: 'high',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

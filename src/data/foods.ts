@@ -1620,6 +1620,20 @@ export const FOODS: Food[] = [
     "source": "Composed: 2 eggs 630 kJ + 1 tsp butter 150 kJ + ~25 ml milk 70 kJ"
   },
   {
+    "id": "slow-cooked-mexican-style-beef-brisket",
+    "name": "Slow Cooked Mexican Style Beef Brisket",
+    "category": "protein",
+    "servingLabel": "1 serve (250 g) — 2 per 500 g pack",
+    "kj": 1660,
+    "confidence": "high",
+    "brand": "Strength Meals Co",
+    "servingGrams": 250,
+    "protein": 45.3,
+    "carbs": 9.2,
+    "fat": 19.7,
+    "source": "Manufacturer panel as supplied; macros reconcile to 0.3%"
+  },
+  {
     "id": "tuna-in-springwater-drained",
     "name": "Tuna in springwater, drained",
     "category": "protein",
