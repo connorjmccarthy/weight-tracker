@@ -1828,6 +1828,47 @@ const EXTRA = [
     confidence: 'high',
   },
   {
+    name: 'Little H Korean fried chicken burger',
+    brand: 'Little H Cafe',
+    category: 'restaurant',
+    servingLabel: '1 burger, no aioli (~345 g) — Friday night special',
+    /*
+     * Korean fried chicken, bacon, burger cheese, gochujang, pickled ginger, iceberg,
+     * milk bun. Built on the other Little H Friday burger already here rather than from
+     * scratch, since it is the same kitchen, the same bun and the same build:
+     *
+     *   milk bun 80 g                 1,000
+     *   Korean fried chicken          1,700   (double-fried and glazed, ~110 more than
+     *                                          the plain house fried chicken)
+     *   bacon 25 g                      410
+     *   burger cheese 20 g              260
+     *   gochujang 20 g                  160
+     *   pickled ginger, iceberg          45
+     *
+     * NO AIOLI, applying the standing preference on this cafe's burgers. With it the
+     * burger is ~4,100; the aioli is 540 and ~14.5 g of fat, and it moves no protein.
+     *
+     * Density 1,032 kJ per 100 g, mid-band for a loaded burger (1,000-1,200, Big Mac
+     * 995) and near-identical to its sibling row at 1,065.
+     *
+     * THE TWO FRIDAY SPECIALS ARE INTERCHANGEABLE. 3,560 here against 3,460 for the
+     * sweet-chilli one, both without aioli — 100 kJ apart on a 3,500 kJ burger. Which
+     * special is on is not a decision worth thinking about; whether the aioli is on it
+     * is.
+     *
+     * Korean fried chicken is double-fried, which is why the chicken line runs above
+     * the sibling's despite a similar piece. The glaze adds little on its own —
+     * gochujang is ~800 kJ/100 g, a third of aioli.
+     */
+    kj: 3560,
+    servingGrams: 345,
+    protein: 48,
+    carbs: 72,
+    fat: 45,
+    source: 'Anchored to the sibling Little H burger; density-checked',
+    confidence: 'low',
+  },
+  {
     name: 'Lunch you forgot to log — rough guess',
     category: 'staple',
     servingLabel: '1 typical lunch',

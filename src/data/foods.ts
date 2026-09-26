@@ -601,6 +601,20 @@ export const FOODS: Food[] = [
     "source": "Component build-up from the posted description; density-checked"
   },
   {
+    "id": "little-h-korean-fried-chicken-burger",
+    "name": "Little H Korean fried chicken burger",
+    "category": "restaurant",
+    "servingLabel": "1 burger, no aioli (~345 g) — Friday night special",
+    "kj": 3560,
+    "confidence": "low",
+    "brand": "Little H Cafe",
+    "servingGrams": 345,
+    "protein": 48,
+    "carbs": 72,
+    "fat": 45,
+    "source": "Anchored to the sibling Little H burger; density-checked"
+  },
+  {
     "id": "loaded-gochujang-fries",
     "name": "Loaded gochujang fries",
     "category": "restaurant",
